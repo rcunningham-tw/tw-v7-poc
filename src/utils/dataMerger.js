@@ -68,7 +68,9 @@ export const mergeClientData = (localData, v7Data) => {
           type: 'v7',
           entityId: doc.id,
           documentType: doc.type,
-          createdAt: doc.created
+          createdAt: doc.created,
+          originalFilename: doc.originalFilename,
+          fileUrl: doc.fileUrl
         }));
 
         mergedData[attorneyName].clients[index] = {
@@ -90,7 +92,9 @@ export const mergeClientData = (localData, v7Data) => {
             type: 'v7',
             entityId: doc.id,
             documentType: doc.type,
-            createdAt: doc.created
+            createdAt: doc.created,
+            originalFilename: doc.originalFilename,
+            fileUrl: doc.fileUrl
           })),
           v7Data: v7Client.v7Data,
           hasV7Data: true,

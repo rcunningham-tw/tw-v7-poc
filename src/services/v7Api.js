@@ -149,7 +149,9 @@ class V7ApiService {
           type: docType,
           address: clientAddress,
           created: entity.created_at,
-          fields: fields
+          fields: fields,
+          originalFilename: originalFilename,
+          fileUrl: fileUrl
         });
       }
 
@@ -164,7 +166,9 @@ class V7ApiService {
           type: docType,
           address: clientAddress,
           created: entity.created_at,
-          fields: fields
+          fields: fields,
+          originalFilename: originalFilename,
+          fileUrl: fileUrl
         });
       }
 

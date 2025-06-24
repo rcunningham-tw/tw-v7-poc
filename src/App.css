@@ -72,6 +72,7 @@ h1 {
   cursor: pointer;
   font-size: 14px;
   transition: background-color 0.3s;
+  margin-left: 10px;
 }
 
 .v7-controls button:hover:not(:disabled) {
@@ -321,7 +322,7 @@ h1 {
   margin: 15px 0;
   border: 1px solid #b8d4ff;
   max-width: 100%;
-  max-height: 300px;
+  max-height: 150px;
   overflow: auto;
 }
 

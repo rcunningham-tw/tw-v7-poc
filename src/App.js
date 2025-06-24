@@ -3,10 +3,12 @@ import './App.css';
 import localClientData from './data/clientData.json';
 import { useV7Data } from './hooks/useV7Data';
 import { mergeClientData, createV7Summary, getDocumentTypeDisplay } from './utils/dataMerger';
+import ComparisonView from './components/ComparisonView';
 
 function App() {
   const [activeAttorney, setActiveAttorney] = useState('Morrison');
   const [shouldUseV7Data, setShouldUseV7Data] = useState(true);
+  const [showComparisonView, setShowComparisonView] = useState(false);
   const [clientData, setClientData] = useState(localClientData);
   
   // Fetch V7 data
@@ -68,9 +70,14 @@ function App() {
 
       // V7 files
       (client.v7Files || []).forEach(v7File => {
-        const filename = `${v7File.documentType || 'Document'}_${v7File.entityId.slice(-8)}`;
+        const filename = v7File.originalFilename || `${v7File.documentType || 'Document'}_${v7File.entityId.slice(-8)}`;
         if (!fileMap.has(filename)) {
-          fileMap.set(filename, { clients: [], type: 'v7', entityId: v7File.entityId });
+          fileMap.set(filename, { 
+            clients: [], 
+            type: 'v7', 
+            entityId: v7File.entityId,
+            originalFilename: v7File.originalFilename 
+          });
         }
         fileMap.get(filename).clients.push(client.name);
       });
@@ -84,12 +91,14 @@ function App() {
       }
     });
     
-    return Array.from(fileMap.entries()).map(([filename, data]) => ({
-      filename,
-      clients: data.clients,
-      type: data.type,
-      entityId: data.entityId
-    }));
+    return Array.from(fileMap.entries())
+      .map(([filename, data]) => ({
+        filename,
+        clients: data.clients,
+        type: data.type,
+        entityId: data.entityId
+      }))
+      .sort((a, b) => a.filename.localeCompare(b.filename));
   };
 
   const getRedHerringFiles = () => {
@@ -198,9 +207,20 @@ function App() {
           </span>
         )}
         <button onClick={refetch} disabled={v7Loading}>Refresh V7 Data</button>
+        {v7Data && (
+          <button 
+            onClick={() => setShowComparisonView(!showComparisonView)}
+          >
+            {showComparisonView ? 'Show Normal View' : 'Show Comparison View'}
+          </button>
+        )}
       </div>
       
-      <div className="attorney-tabs">
+      {showComparisonView && v7Data ? (
+        <ComparisonView localData={localClientData} v7Data={v7Data} />
+      ) : (
+        <>
+          <div className="attorney-tabs">
         {attorneys.map(attorney => (
           <button 
             key={attorney}
@@ -283,10 +303,12 @@ function App() {
                           <ul className="file-list v7-files">
                             {v7Files.map((v7File, idx) => (
                               <li key={idx} className="file-item v7-file">
-                                {getDocumentTypeDisplay(v7File.documentType)}
-                                <span className="entity-id" title={`Entity ID: ${v7File.entityId}`}>
-                                  ({v7File.entityId.slice(-8)})
-                                </span>
+                                {v7File.originalFilename || getDocumentTypeDisplay(v7File.documentType)}
+                                {!v7File.originalFilename && (
+                                  <span className="entity-id" title={`Entity ID: ${v7File.entityId}`}>
+                                    ({v7File.entityId.slice(-8)})
+                                  </span>
+                                )}
                               </li>
                             ))}
                           </ul>
@@ -321,6 +343,8 @@ function App() {
 
 
       </div>
+        </>
+      )}
     </div>
   );
 }
