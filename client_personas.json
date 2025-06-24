@@ -272,5 +272,149 @@
         "address": "3419 Bosque Trail, Albuquerque, NM 87111"
       }
     ]
+  },
+  "attorney_crate_03": {
+    "clients": [
+      {
+        "name": "Alexander James Mitchell",
+        "dob": "1968-10-15",
+        "address": "4567 Emerald Heights Drive, Bellevue, WA 98004",
+        "phone": "(425) 555-7823",
+        "ssn": "534-89-2156",
+        "spouse": "Jennifer Lynn Mitchell",
+        "children": [
+          {
+            "name": "Emma Grace Mitchell",
+            "dob": "1998-03-22",
+            "address": "890 University Way NE, Apt 405, Seattle, WA 98105"
+          },
+          {
+            "name": "Nathan Alexander Mitchell",
+            "dob": "2001-07-14",
+            "address": "4567 Emerald Heights Drive, Bellevue, WA 98004"
+          }
+        ],
+        "assets": {
+          "primary_residence": "4567 Emerald Heights Drive, Bellevue, WA 98004",
+          "vacation_home": "234 Orcas Island Road, Eastsound, WA 98245",
+          "vehicles": ["2023 Tesla Model X", "2022 Rivian R1T", "2021 BMW i8"],
+          "stock_options": "Microsoft Corporation - vested and unvested",
+          "investment_accounts": ["Vanguard", "Fidelity", "E*TRADE"],
+          "startup_investments": ["Various Seattle tech startups - $2M portfolio"]
+        }
+      },
+      {
+        "name": "Captain Robert Douglas MacKenzie",
+        "dob": "1959-04-28",
+        "address": "8901 Waterfront Way, Gig Harbor, WA 98332",
+        "phone": "(253) 555-4567",
+        "ssn": "537-72-8943",
+        "spouse": "Margaret Rose MacKenzie",
+        "children": [
+          {
+            "name": "Douglas Robert MacKenzie Jr.",
+            "dob": "1987-09-11",
+            "address": "567 Alaska Way South, Unit 12, Seattle, WA 98104"
+          },
+          {
+            "name": "Sarah Elizabeth MacKenzie",
+            "dob": "1990-02-27",
+            "address": "3456 Marine View Drive, Tacoma, WA 98402"
+          },
+          {
+            "name": "Andrew James MacKenzie",
+            "dob": "1993-11-05",
+            "address": "234 Harbor Boulevard, Olympia, WA 98501"
+          }
+        ],
+        "assets": {
+          "primary_residence": "8901 Waterfront Way, Gig Harbor, WA 98332",
+          "business": "MacKenzie Maritime Services LLC - Tugboat and Shipping Company",
+          "vessels": ["M/V Pacific Pioneer (tugboat)", "M/V Puget Sound Spirit (tugboat)", "S/V Wind Walker (personal sailboat)"],
+          "waterfront_properties": ["Commercial dock facility - Port of Tacoma", "Marina slip - Gig Harbor"],
+          "vehicles": ["2022 Ford F-350 Super Duty", "2020 Toyota Land Cruiser"],
+          "investment_accounts": ["Charles Schwab", "TD Ameritrade"]
+        }
+      },
+      {
+        "name": "Dr. Emily Chen-Nakamura",
+        "dob": "1975-12-03",
+        "address": "2345 Hawthorne Hills Drive, Portland, OR 97210",
+        "phone": "(503) 555-8901",
+        "ssn": "544-28-7634",
+        "spouse": "Dr. Kenji Nakamura",
+        "children": [
+          {
+            "name": "Maya Emiko Nakamura",
+            "dob": "2005-06-18",
+            "address": "2345 Hawthorne Hills Drive, Portland, OR 97210"
+          },
+          {
+            "name": "Kai Daniel Nakamura",
+            "dob": "2008-10-22",
+            "address": "2345 Hawthorne Hills Drive, Portland, OR 97210"
+          }
+        ],
+        "assets": {
+          "primary_residence": "2345 Hawthorne Hills Drive, Portland, OR 97210",
+          "eco_retreat": "567 Forest Haven Road, Hood River, OR 97031",
+          "vehicles": ["2023 Polestar 2", "2022 Subaru Outback Hybrid"],
+          "business": "Green Pacific Environmental Consulting",
+          "solar_farm_investment": "Columbia Gorge Solar Collective - 25% stake",
+          "investment_accounts": ["ESG-focused funds with Vanguard", "Green Century Funds"],
+          "carbon_offset_portfolio": "Various reforestation and renewable energy projects"
+        }
+      },
+      {
+        "name": "Michael Sean O'Sullivan",
+        "dob": "1963-08-19",
+        "address": "7890 Pearl District Loft, Unit 2501, Portland, OR 97209",
+        "phone": "(503) 555-3456",
+        "ssn": "545-91-2876",
+        "spouse": "Divorced",
+        "children": [
+          {
+            "name": "Caitlin Marie O'Sullivan",
+            "dob": "1992-04-30",
+            "address": "456 Belmont Street, Apt 8, Portland, OR 97214"
+          },
+          {
+            "name": "Ryan Patrick O'Sullivan",
+            "dob": "1995-12-15",
+            "address": "890 Pike Street, Unit 307, Seattle, WA 98122"
+          }
+        ],
+        "assets": {
+          "primary_residence": "7890 Pearl District Loft, Unit 2501, Portland, OR 97209",
+          "business": "O'Sullivan Craft Brewing Company - 4 locations in Oregon/Washington",
+          "commercial_properties": ["Brewery & Taproom - SE Portland", "Brewery & Taproom - NW Portland", "Production Facility - Milwaukie, OR"],
+          "vehicles": ["2022 Mercedes-Benz Sprinter Van (company)", "2021 Audi e-tron GT", "1973 Volkswagen Bus (restored)"],
+          "investment_accounts": ["Northwestern Mutual", "Morgan Stanley"],
+          "hop_farm": "45 acres in Willamette Valley, OR"
+        }
+      }
+    ],
+    "other_individuals": [
+      {
+        "name": "Samantha Tech Williams",
+        "relationship": "Former colleague of Alexander Mitchell at Microsoft",
+        "address": "1234 Capitol Hill Avenue, Seattle, WA 98102"
+      },
+      {
+        "name": "Captain Erik Johannsen",
+        "relationship": "Business partner of Robert MacKenzie",
+        "address": "567 Harbor View Road, Anacortes, WA 98221"
+      },
+      {
+        "name": "Dr. Lisa Wong",
+        "relationship": "Environmental research partner of Emily Chen-Nakamura",
+        "address": "890 Green Street, Eugene, OR 97401"
+      },
+      {
+        "name": "Patrick Finnegan",
+        "relationship": "Head brewmaster for O'Sullivan Brewing",
+        "address": "3421 Alberta Street, Portland, OR 97211"
+      }
+    ]
   }
 }

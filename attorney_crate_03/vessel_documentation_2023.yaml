@@ -1,0 +1,67 @@
+vessel_registry:
+  - vessel_name: "Pacific Thunder"
+    type: "Tugboat"
+    owner: "MacKenzie Maritime Services LLC"
+    documentation_number: "1276854"
+    home_port: "Tacoma, WA"
+    built: 2015
+    length: "85 feet"
+    gross_tonnage: 199
+    engine: "Twin Caterpillar 3512C"
+    insurance:
+      carrier: "Pacific Marine Underwriters"
+      policy: "PMU-2023-45678"
+      coverage: "$5,000,000"
+    crew_requirements:
+      minimum: 4
+      captain_license: "USCG 1600 Ton Master"
+    last_inspection: "2023-03-15"
+    
+  - vessel_name: "Strait Defender"
+    type: "Tugboat"
+    owner: "MacKenzie Maritime Services LLC"
+    documentation_number: "1198742"
+    home_port: "Tacoma, WA"
+    built: 2008
+    length: "78 feet"
+    gross_tonnage: 185
+    engine: "Twin EMD 12-710"
+    insurance:
+      carrier: "Pacific Marine Underwriters"
+      policy: "PMU-2023-45679"
+      coverage: "$4,000,000"
+    crew_requirements:
+      minimum: 4
+      captain_license: "USCG 1600 Ton Master"
+    last_inspection: "2023-05-22"
+    
+  - vessel_name: "Highland Dream"
+    type: "Sailing Yacht"
+    owner: "Robert Douglas MacKenzie"
+    documentation_number: "1345678"
+    home_port: "Gig Harbor, WA"
+    built: 2019
+    length: "52 feet"
+    manufacturer: "Beneteau"
+    model: "Oceanis 51.1"
+    insurance:
+      carrier: "BoatUS"
+      policy: "BUS-WA-789456"
+      coverage: "$650,000"
+    mooring_location:
+      marina: "Gig Harbor Marina"
+      slip: "C-42"
+      
+dock_facilities:
+  port_of_tacoma_facility:
+    address: "1234 Marine View Drive, Tacoma, WA 98421"
+    owned_by: "MacKenzie Maritime Services LLC"
+    features:
+      - "200 feet of dock space"
+      - "Heavy lift crane (50 ton capacity)"
+      - "Fuel depot (15,000 gallon capacity)"
+      - "Maintenance shop (5,000 sq ft)"
+    lease_agreements:
+      - tenant: "Puget Sound Shipping Co"
+        monthly_rent: 8500
+        term_expires: "2025-12-31"

@@ -1,0 +1,48 @@
+{
+  "agreement_type": "Restricted Stock Unit Agreement",
+  "company": "Microsoft Corporation",
+  "employee": {
+    "name": "Alexander James Mitchell",
+    "employee_id": "MSFT-2018-78432",
+    "department": "Cloud + AI Engineering",
+    "title": "Principal Software Engineer"
+  },
+  "grant_details": {
+    "grant_date": "2023-02-15",
+    "total_units": 5000,
+    "grant_price": 0,
+    "fair_market_value_at_grant": "$258.07"
+  },
+  "vesting_schedule": [
+    {
+      "date": "2024-02-15",
+      "units": 1250,
+      "percentage": 25
+    },
+    {
+      "date": "2025-02-15",
+      "units": 1250,
+      "percentage": 25
+    },
+    {
+      "date": "2026-02-15",
+      "units": 1250,
+      "percentage": 25
+    },
+    {
+      "date": "2027-02-15",
+      "units": 1250,
+      "percentage": 25
+    }
+  ],
+  "tax_withholding": {
+    "method": "Sell to Cover",
+    "estimated_rate": 0.37
+  },
+  "address_on_file": "4532 148th Avenue NE, Bellevue, WA 98007",
+  "special_provisions": {
+    "acceleration_on_change_of_control": true,
+    "continued_vesting_during_leave": "Up to 12 months",
+    "forfeiture_conditions": "Termination for cause or voluntary resignation"
+  }
+}

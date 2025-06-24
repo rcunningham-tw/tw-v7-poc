@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<startup_investments>
+  <investor>
+    <name>Alexander James Mitchell</name>
+    <address>4532 148th Avenue NE, Bellevue, WA 98007</address>
+    <accredited_status>true</accredited_status>
+  </investor>
+  
+  <investment record_date="2023-06-15">
+    <company>NeuralFlow AI Inc.</company>
+    <location>Seattle, WA</location>
+    <round>Series A</round>
+    <amount>150000</amount>
+    <shares>75000</shares>
+    <share_class>Preferred Series A</share_class>
+    <price_per_share>2.00</price_per_share>
+    <ownership_percentage>2.5</ownership_percentage>
+    <liquidation_preference>1x</liquidation_preference>
+    <anti_dilution>Weighted Average</anti_dilution>
+  </investment>
+  
+  <investment record_date="2023-03-22">
+    <company>Cascade Robotics LLC</company>
+    <location>Redmond, WA</location>
+    <round>Seed</round>
+    <amount>50000</amount>
+    <shares>100000</shares>
+    <share_class>Common</share_class>
+    <price_per_share>0.50</price_per_share>
+    <ownership_percentage>5.0</ownership_percentage>
+    <board_observer_rights>true</board_observer_rights>
+  </investment>
+  
+  <investment record_date="2022-11-10">
+    <company>Puget Systems Technologies</company>
+    <location>Tacoma, WA</location>
+    <round>Series B</round>
+    <amount>200000</amount>
+    <shares>40000</shares>
+    <share_class>Preferred Series B</share_class>
+    <price_per_share>5.00</price_per_share>
+    <ownership_percentage>1.2</ownership_percentage>
+    <liquidation_preference>1.5x</liquidation_preference>
+    <participation>Capped at 3x</participation>
+  </investment>
+  
+  <safe_investment record_date="2023-08-01">
+    <company>Evergreen VR Studios</company>
+    <location>Seattle, WA</location>
+    <amount>75000</amount>
+    <valuation_cap>10000000</valuation_cap>
+    <discount>20</discount>
+    <type>Post-Money SAFE</type>
+  </safe_investment>
+  
+  <portfolio_summary>
+    <total_invested>475000</total_invested>
+    <active_investments>4</active_investments>
+    <estimated_current_value>725000</estimated_current_value>
+    <realized_gains>0</realized_gains>
+  </portfolio_summary>
+</startup_investments>

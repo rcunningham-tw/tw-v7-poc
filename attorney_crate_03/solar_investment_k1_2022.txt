@@ -1,0 +1,53 @@
+Schedule K-1 (Form 1065)
+Partner's Share of Income, Deductions, Credits, etc.
+Tax Year 2022
+
+PARTNERSHIP INFORMATION:
+Name: CASCADIA SOLAR PARTNERS LLC
+EIN: 84-1234567
+Address: 2000 Renewable Way, Suite 100, Portland, OR 97201
+
+PARTNER INFORMATION:
+Name: Emily Chen-Nakamura
+SSN: XXX-XX-4789
+Address: 3456 Hawthorne Boulevard, Portland, OR 97214
+Partner Type: Limited Partner
+Ownership %: 12.5%
+Profit Sharing %: 12.5%
+Capital Account:
+  Beginning: $287,500
+  Contributions: $62,500
+  Distributions: ($45,000)
+  Ending: $305,000
+
+INCOME (LOSS):
+1. Ordinary business income (loss): ($18,750)
+4. Guaranteed payments: $0
+5. Interest income: $1,250
+11. Other income - Investment Tax Credit: $43,750
+
+DEDUCTIONS:
+12. Section 179 deduction: $31,250
+13. Other deductions - Solar panel depreciation: $156,250
+
+CREDITS:
+15a. Low-income housing credit: $0
+15b. Renewable Energy Investment Credit: $43,750
+
+ALTERNATIVE MINIMUM TAX ITEMS:
+16. Tax-exempt interest income: $2,500
+17. Depreciation adjustment: $28,125
+
+OTHER INFORMATION:
+20. Investment in renewable energy property: $350,000
+    Placed in service date: 06/15/2022
+    Location: Bend, Oregon Solar Farm
+
+This K-1 is for a publicly traded partnership: No
+Partner's share of liabilities:
+  Nonrecourse: $218,750
+  Qualified nonrecourse financing: $131,250
+  Recourse: $0
+
+Tax Preparer: Green Energy Tax Advisors LLP
+Date: March 10, 2023

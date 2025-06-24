@@ -1,0 +1,12 @@
+project_name,project_type,location,vintage_year,credits_owned,price_per_credit,total_investment,verification_standard,project_id,expiration_date
+"Quinault Forest Conservation","REDD+","Olympic Peninsula, WA",2022,1500,18.50,27750,"VCS","VCS-1823",2032-12-31
+"Oregon Coast Range Reforestation","Afforestation","Tillamook County, OR",2023,2000,22.00,44000,"Climate Action Reserve","CAR-8745",2043-06-30
+"Deschutes Wind Farm","Renewable Energy","Sherman County, OR",2021,1000,15.75,15750,"Gold Standard","GS-4521",2031-12-31
+"Yakima Solar Initiative","Solar Energy","Yakima County, WA",2023,500,24.00,12000,"Gold Standard","GS-5234",2033-12-31
+"Blue Mountain Biochar","Carbon Sequestration","Wallowa County, OR",2022,800,28.50,22800,"Puro.earth","PURO-789",2042-12-31
+"Coastal Wetlands Restoration","Blue Carbon","Grays Harbor, WA",2023,700,35.00,24500,"VCS","VCS-2156",2043-12-31
+"Direct Air Capture Credits","Technology-based","Portland, OR",2023,500,125.00,62500,"ISO 14064-2","DAC-001",2033-12-31
+"Portland Compost Project","Waste Reduction","Portland, OR",2022,300,12.00,3600,"Climate Action Reserve","CAR-9123",2032-06-30
+"Native Forest Preservation","Conservation","Mt. Hood National Forest",2021,900,20.00,18000,"VCS","VCS-1999",2041-12-31
+"Regenerative Agriculture","Soil Carbon","Willamette Valley, OR",2023,1000,16.50,16500,"Nori","NORI-456",2033-12-31
+"TOTAL","","","",9200,"",247400,"","",""
