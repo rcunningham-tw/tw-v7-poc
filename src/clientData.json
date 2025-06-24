@@ -1,0 +1,606 @@
+{
+  "Morrison": {
+    "clients": [
+    {
+      "name": "Margaret Elizabeth Thompson",
+      "dob": "1948-03-15",
+      "address": "2847 Willow Creek Drive, Fairfield, CT 06824",
+      "phone": "(203) 555-7891",
+      "ssn": "049-82-3476",
+      "spouse": "Robert James Thompson (deceased 2019)",
+      "children": [
+        {
+          "name": "Sarah Thompson-Mitchell",
+          "dob": "1975-08-22",
+          "address": "456 Oak Street, Apartment 3B, New Haven, CT 06511"
+        },
+        {
+          "name": "Michael Robert Thompson",
+          "dob": "1978-11-04",
+          "address": "9821 Riverside Road, Westport, CT 06880"
+        }
+      ],
+      "assets": {
+        "primary_residence": "2847 Willow Creek Drive, Fairfield, CT 06824",
+        "vacation_home": "18 Sunset Beach Lane, Madison, CT 06443",
+        "vehicles": ["2019 Mercedes-Benz E-Class", "2021 Lexus RX350"],
+        "investment_accounts": ["Vanguard", "Fidelity", "Charles Schwab"]
+      }
+    },
+    {
+      "name": "James Anthony Castellano",
+      "dob": "1955-07-28",
+      "address": "1592 Highland Avenue, Stamford, CT 06905",
+      "phone": "(203) 555-2341",
+      "ssn": "012-64-8923",
+      "spouse": "Maria Elena Castellano",
+      "children": [
+        {
+          "name": "Anthony James Castellano Jr.",
+          "dob": "1982-04-15",
+          "address": "234 Spring Street, Greenwich, CT 06830"
+        },
+        {
+          "name": "Isabella Marie Castellano",
+          "dob": "1985-09-30",
+          "address": "78 Park Place, Unit 12, Norwalk, CT 06851"
+        },
+        {
+          "name": "Vincent Paul Castellano",
+          "dob": "1988-12-17",
+          "address": "1592 Highland Avenue, Stamford, CT 06905"
+        }
+      ],
+      "assets": {
+        "primary_residence": "1592 Highland Avenue, Stamford, CT 06905",
+        "rental_properties": ["45 Main Street, Darien, CT 06820", "789 Commerce Drive, Unit A, Norwalk, CT 06854"],
+        "vehicles": ["2020 BMW X5", "2018 Ford F-150", "1967 Chevrolet Camaro (classic)"],
+        "business": "Castellano Construction LLC"
+      }
+    },
+    {
+      "name": "Dorothy June Henderson",
+      "dob": "1943-01-09",
+      "address": "567 Maple Grove Road, Ridgefield, CT 06877",
+      "phone": "(203) 555-9012",
+      "ssn": "089-45-2367",
+      "spouse": "Charles William Henderson (deceased 2021)",
+      "children": [
+        {
+          "name": "William Charles Henderson",
+          "dob": "1968-05-20",
+          "address": "8901 Corporate Drive, Suite 200, Hartford, CT 06103"
+        },
+        {
+          "name": "Patricia Henderson-Davis",
+          "dob": "1971-10-14",
+          "address": "234 Elm Street, Wilton, CT 06897"
+        }
+      ],
+      "assets": {
+        "primary_residence": "567 Maple Grove Road, Ridgefield, CT 06877",
+        "vehicles": ["2022 Honda CR-V"],
+        "artwork_collection": "Various pieces valued at $250,000+",
+        "investment_accounts": ["TD Ameritrade", "Morgan Stanley"]
+      }
+    },
+    {
+      "name": "Richard Alan Foster",
+      "dob": "1962-09-03",
+      "address": "3421 Ocean View Drive, Old Saybrook, CT 06475",
+      "phone": "(860) 555-4567",
+      "ssn": "034-78-5612",
+      "spouse": "Linda Marie Foster",
+      "children": [
+        {
+          "name": "Jessica Lynn Foster",
+          "dob": "1989-03-27",
+          "address": "789 University Avenue, Boston, MA 02115"
+        },
+        {
+          "name": "Ryan Matthew Foster",
+          "dob": "1992-07-11",
+          "address": "456 Tech Park Drive, Apt 7C, Cambridge, MA 02142"
+        }
+      ],
+      "assets": {
+        "primary_residence": "3421 Ocean View Drive, Old Saybrook, CT 06475",
+        "boat": "42-foot Catalina Sailboat 'Wind Dancer'",
+        "vehicles": ["2021 Tesla Model Y", "2019 Jeep Wrangler"],
+        "retirement_accounts": ["401k with Pratt & Whitney", "IRA with E*TRADE"]
+      }
+    }
+  ],
+  "other_individuals": [
+    {
+      "name": "Barbara Ann Mitchell",
+      "relationship": "Friend of Margaret Thompson",
+      "address": "892 Pine Ridge Court, Fairfield, CT 06825"
+    },
+    {
+      "name": "Joseph Michael Romano",
+      "relationship": "Business partner of James Castellano",
+      "address": "456 Industrial Way, Bridgeport, CT 06604"
+    },
+    {
+      "name": "Eleanor Grace Williams",
+      "relationship": "Neighbor",
+      "address": "569 Maple Grove Road, Ridgefield, CT 06877"
+    }
+  ]
+  },
+  "Fitzgerald": {
+    "clients": [
+      {
+        "name": "Roberto Carlos Martinez",
+        "dob": "1951-06-21",
+        "address": "4328 Desert Sage Drive, Phoenix, AZ 85048",
+        "phone": "(602) 555-8234",
+        "ssn": "526-74-9821",
+        "spouse": "Elena Maria Martinez",
+        "children": [
+          {
+            "name": "Carlos Roberto Martinez Jr.",
+            "dob": "1979-02-14",
+            "address": "7892 Cactus Bloom Way, Scottsdale, AZ 85254"
+          },
+          {
+            "name": "Sofia Elena Martinez-Rodriguez",
+            "dob": "1982-10-28",
+            "address": "234 Rio Grande Boulevard, Albuquerque, NM 87104"
+          },
+          {
+            "name": "Diego Luis Martinez",
+            "dob": "1985-07-03",
+            "address": "5678 Saguaro Vista Lane, Tucson, AZ 85719"
+          }
+        ],
+        "assets": {
+          "primary_residence": "4328 Desert Sage Drive, Phoenix, AZ 85048",
+          "vacation_home": "891 Pine Canyon Road, Sedona, AZ 86336",
+          "vehicles": ["2022 GMC Sierra Denali", "2020 Cadillac Escalade", "2018 Porsche 911"],
+          "investment_accounts": ["Edward Jones", "Wells Fargo Advisors"],
+          "business": "Martinez Commercial Real Estate Holdings LLC"
+        }
+      },
+      {
+        "name": "Patricia Anne Sullivan",
+        "dob": "1946-11-30",
+        "address": "2156 Adobe Ranch Road, Santa Fe, NM 87505",
+        "phone": "(505) 555-3421",
+        "ssn": "585-92-4367",
+        "spouse": "Thomas Patrick Sullivan (deceased 2020)",
+        "children": [
+          {
+            "name": "Kathleen Sullivan-Meyer",
+            "dob": "1973-04-18",
+            "address": "890 Plaza del Sol, Las Cruces, NM 88001"
+          },
+          {
+            "name": "Patrick Thomas Sullivan",
+            "dob": "1975-09-22",
+            "address": "4567 Mountain View Drive, Flagstaff, AZ 86001"
+          }
+        ],
+        "assets": {
+          "primary_residence": "2156 Adobe Ranch Road, Santa Fe, NM 87505",
+          "artwork_collection": "Southwestern and Native American art valued at $500,000+",
+          "vehicles": ["2021 Lincoln Navigator", "1965 Ford Mustang Convertible (classic)"],
+          "ranch_property": "Sullivan Ranch - 320 acres near Taos, NM",
+          "investment_accounts": ["Raymond James", "Merrill Lynch"]
+        }
+      },
+      {
+        "name": "David Michael Chen",
+        "dob": "1958-05-17",
+        "address": "8934 Camelback Mountain Way, Paradise Valley, AZ 85253",
+        "phone": "(480) 555-6789",
+        "ssn": "527-83-1256",
+        "spouse": "Jennifer Lin Chen",
+        "children": [
+          {
+            "name": "Michael David Chen",
+            "dob": "1988-01-25",
+            "address": "567 Tech Innovation Drive, Tempe, AZ 85281"
+          },
+          {
+            "name": "Emily Rose Chen",
+            "dob": "1991-08-12",
+            "address": "1234 Medical Center Plaza, Unit 15B, Phoenix, AZ 85004"
+          },
+          {
+            "name": "Daniel James Chen",
+            "dob": "1994-12-08",
+            "address": "8934 Camelback Mountain Way, Paradise Valley, AZ 85253"
+          }
+        ],
+        "assets": {
+          "primary_residence": "8934 Camelback Mountain Way, Paradise Valley, AZ 85253",
+          "commercial_properties": ["Chen Medical Plaza - Phoenix", "Desert Tech Center - Chandler"],
+          "vehicles": ["2023 Range Rover Sport", "2022 Tesla Model S", "2021 BMW M5"],
+          "business": "Chen Healthcare Management Group",
+          "investment_accounts": ["Goldman Sachs", "JP Morgan Private Bank"]
+        }
+      },
+      {
+        "name": "Maria Guadalupe Hernandez",
+        "dob": "1954-03-09",
+        "address": "3421 Bosque Trail, Albuquerque, NM 87111",
+        "phone": "(505) 555-9012",
+        "ssn": "585-67-8934",
+        "spouse": "Juan Carlos Hernandez",
+        "children": [
+          {
+            "name": "Alejandra Maria Hernandez",
+            "dob": "1981-06-14",
+            "address": "789 University Boulevard SE, Albuquerque, NM 87106"
+          },
+          {
+            "name": "Ricardo Juan Hernandez",
+            "dob": "1984-11-27",
+            "address": "2345 Copper Avenue NW, Albuquerque, NM 87102"
+          }
+        ],
+        "assets": {
+          "primary_residence": "3421 Bosque Trail, Albuquerque, NM 87111",
+          "rental_properties": ["567 Central Avenue SW, Albuquerque", "890 Rio Bravo Drive, Las Cruces"],
+          "vehicles": ["2022 Chevrolet Tahoe", "2020 Toyota Camry"],
+          "restaurant": "La Casa Hernandez - Family Restaurant Chain (3 locations)",
+          "investment_accounts": ["Schwab", "Ameriprise Financial"]
+        }
+      }
+    ],
+    "other_individuals": [
+      {
+        "name": "Frank Joseph Morales",
+        "relationship": "Business partner of Roberto Martinez",
+        "address": "7823 Pinnacle Peak Road, Scottsdale, AZ 85255"
+      },
+      {
+        "name": "Susan Marie O'Brien",
+        "relationship": "Friend of Patricia Sullivan",
+        "address": "2158 Adobe Ranch Road, Santa Fe, NM 87505"
+      },
+      {
+        "name": "Dr. William Zhang",
+        "relationship": "Medical partner of David Chen",
+        "address": "456 Healthcare Boulevard, Phoenix, AZ 85016"
+      },
+      {
+        "name": "Antonio Luis Pacheco",
+        "relationship": "Neighbor of Maria Hernandez",
+        "address": "3419 Bosque Trail, Albuquerque, NM 87111"
+      }
+    ]
+  },
+  "Yamamoto": {
+    "clients": [
+      {
+        "name": "Alexander James Mitchell",
+        "dob": "1968-10-15",
+        "address": "4567 Emerald Heights Drive, Bellevue, WA 98004",
+        "phone": "(425) 555-7823",
+        "ssn": "534-89-2156",
+        "spouse": "Jennifer Lynn Mitchell",
+        "children": [
+          {
+            "name": "Emma Grace Mitchell",
+            "dob": "1998-03-22",
+            "address": "890 University Way NE, Apt 405, Seattle, WA 98105"
+          },
+          {
+            "name": "Nathan Alexander Mitchell",
+            "dob": "2001-07-14",
+            "address": "4567 Emerald Heights Drive, Bellevue, WA 98004"
+          }
+        ],
+        "assets": {
+          "primary_residence": "4567 Emerald Heights Drive, Bellevue, WA 98004",
+          "vacation_home": "234 Orcas Island Road, Eastsound, WA 98245",
+          "vehicles": ["2023 Tesla Model X", "2022 Rivian R1T", "2021 BMW i8"],
+          "stock_options": "Microsoft Corporation - vested and unvested",
+          "investment_accounts": ["Vanguard", "Fidelity", "E*TRADE"],
+          "startup_investments": ["Various Seattle tech startups - $2M portfolio"]
+        }
+      },
+      {
+        "name": "Captain Robert Douglas MacKenzie",
+        "dob": "1959-04-28",
+        "address": "8901 Waterfront Way, Gig Harbor, WA 98332",
+        "phone": "(253) 555-4567",
+        "ssn": "537-72-8943",
+        "spouse": "Margaret Rose MacKenzie",
+        "children": [
+          {
+            "name": "Douglas Robert MacKenzie Jr.",
+            "dob": "1987-09-11",
+            "address": "567 Alaska Way South, Unit 12, Seattle, WA 98104"
+          },
+          {
+            "name": "Sarah Elizabeth MacKenzie",
+            "dob": "1990-02-27",
+            "address": "3456 Marine View Drive, Tacoma, WA 98402"
+          },
+          {
+            "name": "Andrew James MacKenzie",
+            "dob": "1993-11-05",
+            "address": "234 Harbor Boulevard, Olympia, WA 98501"
+          }
+        ],
+        "assets": {
+          "primary_residence": "8901 Waterfront Way, Gig Harbor, WA 98332",
+          "business": "MacKenzie Maritime Services LLC - Tugboat and Shipping Company",
+          "vessels": ["M/V Pacific Pioneer (tugboat)", "M/V Puget Sound Spirit (tugboat)", "S/V Wind Walker (personal sailboat)"],
+          "waterfront_properties": ["Commercial dock facility - Port of Tacoma", "Marina slip - Gig Harbor"],
+          "vehicles": ["2022 Ford F-350 Super Duty", "2020 Toyota Land Cruiser"],
+          "investment_accounts": ["Charles Schwab", "TD Ameritrade"]
+        }
+      },
+      {
+        "name": "Dr. Emily Chen-Nakamura",
+        "dob": "1975-12-03",
+        "address": "2345 Hawthorne Hills Drive, Portland, OR 97210",
+        "phone": "(503) 555-8901",
+        "ssn": "544-28-7634",
+        "spouse": "Dr. Kenji Nakamura",
+        "children": [
+          {
+            "name": "Maya Emiko Nakamura",
+            "dob": "2005-06-18",
+            "address": "2345 Hawthorne Hills Drive, Portland, OR 97210"
+          },
+          {
+            "name": "Kai Daniel Nakamura",
+            "dob": "2008-10-22",
+            "address": "2345 Hawthorne Hills Drive, Portland, OR 97210"
+          }
+        ],
+        "assets": {
+          "primary_residence": "2345 Hawthorne Hills Drive, Portland, OR 97210",
+          "eco_retreat": "567 Forest Haven Road, Hood River, OR 97031",
+          "vehicles": ["2023 Polestar 2", "2022 Subaru Outback Hybrid"],
+          "business": "Green Pacific Environmental Consulting",
+          "solar_farm_investment": "Columbia Gorge Solar Collective - 25% stake",
+          "investment_accounts": ["ESG-focused funds with Vanguard", "Green Century Funds"],
+          "carbon_offset_portfolio": "Various reforestation and renewable energy projects"
+        }
+      },
+      {
+        "name": "Michael Sean O'Sullivan",
+        "dob": "1963-08-19",
+        "address": "7890 Pearl District Loft, Unit 2501, Portland, OR 97209",
+        "phone": "(503) 555-3456",
+        "ssn": "545-91-2876",
+        "spouse": "Divorced",
+        "children": [
+          {
+            "name": "Caitlin Marie O'Sullivan",
+            "dob": "1992-04-30",
+            "address": "456 Belmont Street, Apt 8, Portland, OR 97214"
+          },
+          {
+            "name": "Ryan Patrick O'Sullivan",
+            "dob": "1995-12-15",
+            "address": "890 Pike Street, Unit 307, Seattle, WA 98122"
+          }
+        ],
+        "assets": {
+          "primary_residence": "7890 Pearl District Loft, Unit 2501, Portland, OR 97209",
+          "business": "O'Sullivan Craft Brewing Company - 4 locations in Oregon/Washington",
+          "commercial_properties": ["Brewery & Taproom - SE Portland", "Brewery & Taproom - NW Portland", "Production Facility - Milwaukie, OR"],
+          "vehicles": ["2022 Mercedes-Benz Sprinter Van (company)", "2021 Audi e-tron GT", "1973 Volkswagen Bus (restored)"],
+          "investment_accounts": ["Northwestern Mutual", "Morgan Stanley"],
+          "hop_farm": "45 acres in Willamette Valley, OR"
+        }
+      }
+    ],
+    "other_individuals": [
+      {
+        "name": "Samantha Tech Williams",
+        "relationship": "Former colleague of Alexander Mitchell at Microsoft",
+        "address": "1234 Capitol Hill Avenue, Seattle, WA 98102"
+      },
+      {
+        "name": "Captain Erik Johannsen",
+        "relationship": "Business partner of Robert MacKenzie",
+        "address": "567 Harbor View Road, Anacortes, WA 98221"
+      },
+      {
+        "name": "Dr. Lisa Wong",
+        "relationship": "Environmental research partner of Emily Chen-Nakamura",
+        "address": "890 Green Street, Eugene, OR 97401"
+      },
+      {
+        "name": "Patrick Finnegan",
+        "relationship": "Head brewmaster for O'Sullivan Brewing",
+        "address": "3421 Alberta Street, Portland, OR 97211"
+      }
+    ]
+  },
+  "Blackwell": {
+    "clients": [
+      {
+        "name": "Marcus Antonio Rivera",
+        "dob": "1976-09-12",
+        "address": "1847 Star Island Drive, Miami Beach, FL 33139",
+        "phone": "(305) 555-9234",
+        "ssn": "593-84-7621",
+        "spouse": "Valentina Sofia Rivera",
+        "children": [
+          {
+            "name": "Sebastian Marcus Rivera",
+            "dob": "2003-05-18",
+            "address": "890 Brickell Avenue, Unit 4502, Miami, FL 33131"
+          },
+          {
+            "name": "Isabella Rose Rivera",
+            "dob": "2006-11-22",
+            "address": "1847 Star Island Drive, Miami Beach, FL 33139"
+          }
+        ],
+        "assets": {
+          "primary_residence": "1847 Star Island Drive, Miami Beach, FL 33139",
+          "caribbean_properties": ["Villa Serenidad - St. Barts", "Beachfront Estate - Turks and Caicos"],
+          "vehicles": ["2023 Lamborghini Huracán", "2022 Rolls-Royce Cullinan", "2023 Ferrari Roma"],
+          "yacht": "M/Y Tropical Dreams - 185ft Benetti",
+          "music_studio": "Rivera Sound Studios - Miami Design District",
+          "record_label": "Fuego Latino Records LLC",
+          "offshore_accounts": ["Cayman National Bank", "Swiss Private Banking"],
+          "investment_accounts": ["UBS Wealth Management", "Credit Suisse"]
+        }
+      },
+      {
+        "name": "Demarco Tyrell Washington",
+        "dob": "1988-02-24",
+        "address": "9567 Ocean Drive Penthouse, Miami Beach, FL 33141",
+        "phone": "(786) 555-4567",
+        "ssn": "597-23-8945",
+        "spouse": "Jasmine Nicole Washington",
+        "children": [
+          {
+            "name": "Demarco Tyrell Washington Jr.",
+            "dob": "2012-07-14",
+            "address": "9567 Ocean Drive Penthouse, Miami Beach, FL 33141"
+          },
+          {
+            "name": "Aaliyah Grace Washington",
+            "dob": "2015-03-28",
+            "address": "9567 Ocean Drive Penthouse, Miami Beach, FL 33141"
+          }
+        ],
+        "assets": {
+          "primary_residence": "9567 Ocean Drive Penthouse, Miami Beach, FL 33141",
+          "investment_properties": ["Wynwood Commercial Complex", "Coral Gables Luxury Condos (12 units)"],
+          "bahamas_estate": "Paradise Island Compound - Nassau, Bahamas",
+          "vehicles": ["2023 McLaren 720S", "2023 Maybach S-Class", "Custom Mercedes G-Wagon"],
+          "business": "DW Sports Management & Entertainment",
+          "nfl_contracts": "Former Miami Dolphins - Deferred compensation & endorsements",
+          "restaurant_chain": "Washington's Wings & Things - 8 Florida locations",
+          "offshore_entities": ["Bahamas International Business Company", "BVI Holdings"]
+        }
+      },
+      {
+        "name": "Captain Francesco DiMarco",
+        "dob": "1964-07-08",
+        "address": "2341 Bayshore Drive, Coconut Grove, FL 33133",
+        "phone": "(305) 555-7890",
+        "ssn": "592-67-3421",
+        "spouse": "Isabella Maria DiMarco",
+        "children": [
+          {
+            "name": "Antonio Francesco DiMarco",
+            "dob": "1991-04-15",
+            "address": "567 Las Olas Boulevard, Fort Lauderdale, FL 33301"
+          },
+          {
+            "name": "Sophia Valentina DiMarco",
+            "dob": "1994-09-30",
+            "address": "234 Worth Avenue, Palm Beach, FL 33480"
+          },
+          {
+            "name": "Marco Giovanni DiMarco",
+            "dob": "1997-12-18",
+            "address": "2341 Bayshore Drive, Coconut Grove, FL 33133"
+          }
+        ],
+        "assets": {
+          "primary_residence": "2341 Bayshore Drive, Coconut Grove, FL 33133",
+          "vacation_home": "789 Old Town Key West, FL 33040",
+          "cruise_business": "DiMarco Luxury Yacht Charters LLC",
+          "fleet": ["M/Y Azure Dreams (220ft)", "M/Y Caribbean Star (180ft)", "M/Y Miami Vice (150ft)"],
+          "marina_properties": ["Fort Lauderdale Marina Slips (5)", "Miami Beach Marina (3 slips)"],
+          "vehicles": ["2022 Bentley Continental GT", "2021 Range Rover SVR", "Classic 1969 Ferrari Dino"],
+          "offshore_registrations": ["Malta Maritime Registry", "Marshall Islands Flag"]
+        }
+      },
+      {
+        "name": "Alejandra Cristina Mendoza-Perez",
+        "dob": "1982-11-25",
+        "address": "4578 Fisher Island Drive, Unit 7302, Fisher Island, FL 33109",
+        "phone": "(786) 555-2345",
+        "ssn": "594-82-6789",
+        "spouse": "Carlos Eduardo Perez",
+        "children": [
+          {
+            "name": "Cristina Marie Perez",
+            "dob": "2008-06-12",
+            "address": "4578 Fisher Island Drive, Unit 7302, Fisher Island, FL 33109"
+          },
+          {
+            "name": "Eduardo Carlos Perez Jr.",
+            "dob": "2011-10-08",
+            "address": "4578 Fisher Island Drive, Unit 7302, Fisher Island, FL 33109"
+          }
+        ],
+        "assets": {
+          "primary_residence": "4578 Fisher Island Drive, Unit 7302, Fisher Island, FL 33109",
+          "development_projects": ["Mendoza Towers - Brickell", "Sunset Harbor Residences", "Caribbean Plaza - Dominican Republic"],
+          "hotels": ["Boutique Hotel Mendoza - South Beach", "Resort property - Punta Cana"],
+          "vehicles": ["2023 Bentley Bentayga", "2022 Porsche Taycan Turbo S", "2023 Mercedes AMG GT"],
+          "private_jet": "Gulfstream G650 (fractional ownership)",
+          "art_collection": "Latin American contemporary art - $8M valuation",
+          "offshore_holdings": ["Panama Real Estate Trust", "Dominican Republic Development Corp"],
+          "investment_accounts": ["Julius Baer", "BNP Paribas Wealth Management"]
+        }
+      },
+      {
+        "name": "Jonathan Blake Sterling",
+        "dob": "1970-03-17",
+        "address": "8912 Sunset Islands Drive, Miami Beach, FL 33140",
+        "phone": "(305) 555-6123",
+        "ssn": "591-45-3876",
+        "spouse": "Alexandra Nicole Sterling",
+        "children": [
+          {
+            "name": "Blake Alexander Sterling",
+            "dob": "1998-08-20",
+            "address": "456 Lincoln Road, Apt 2001, Miami Beach, FL 33139"
+          },
+          {
+            "name": "Nicole Marie Sterling",
+            "dob": "2001-02-14",
+            "address": "University of Miami, Coral Gables, FL 33146"
+          }
+        ],
+        "assets": {
+          "primary_residence": "8912 Sunset Islands Drive, Miami Beach, FL 33140",
+          "entertainment_venue": "Sterling Nightclub Group - 5 Miami venues",
+          "production_company": "Sterling Entertainment Productions LLC",
+          "caribbean_resort": "Sterling Bay Resort - Antigua",
+          "vehicles": ["2023 Aston Martin DBX", "2022 Ferrari F8 Spider", "2021 Rolls-Royce Dawn"],
+          "yacht": "S/Y Sterling Star - 120ft sailing yacht",
+          "crypto_holdings": "Digital asset portfolio - various exchanges",
+          "offshore_structures": ["Bermuda Entertainment Holdings", "Cayman Events Management Ltd"],
+          "investment_accounts": ["Deutsche Bank Wealth Management", "HSBC Private Banking"]
+        }
+      }
+    ],
+    "other_individuals": [
+      {
+        "name": "Luis Miguel Santana",
+        "relationship": "Music producer partner of Marcus Rivera",
+        "address": "234 Biscayne Boulevard, Unit 3401, Miami, FL 33132"
+      },
+      {
+        "name": "Diamond Jackson",
+        "relationship": "Sports agent working with Demarco Washington",
+        "address": "567 Aventura Boulevard, Aventura, FL 33180"
+      },
+      {
+        "name": "Captain Roberto Gonzalez",
+        "relationship": "Yacht captain for Francesco DiMarco's fleet",
+        "address": "890 Marina Way, Fort Lauderdale, FL 33316"
+      },
+      {
+        "name": "Maria Elena Vasquez",
+        "relationship": "Business partner of Alejandra Mendoza-Perez",
+        "address": "4576 Fisher Island Drive, Unit 5201, Fisher Island, FL 33109"
+      },
+      {
+        "name": "Vincent 'Vinny' Russo",
+        "relationship": "Nightclub operations manager for Jonathan Sterling",
+        "address": "789 Collins Avenue, Apt 1205, Miami Beach, FL 33141"
+      }
+    ]
+  }
+}
