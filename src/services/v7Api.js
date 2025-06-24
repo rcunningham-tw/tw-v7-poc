@@ -49,23 +49,23 @@ class V7ApiService {
   // Get all projects in the workspace
   async getProjects() {
     const url = `${BASE_URL}/workspaces/${WORKSPACE_ID}/projects`;
-    const data = await this.fetchWithAuth(url);
-    return data.projects || [];
+    const response = await this.fetchWithAuth(url);
+    return response.data || response.projects || [];
   }
 
   // Get properties for a specific project
   async getProjectProperties(projectId) {
     const url = `${BASE_URL}/workspaces/${WORKSPACE_ID}/projects/${projectId}/properties`;
-    const data = await this.fetchWithAuth(url);
-    return data.properties || [];
+    const response = await this.fetchWithAuth(url);
+    return response.data || response.properties || [];
   }
 
   // Get entities (documents) with pagination
   async getEntities(projectId, limit = 100, offset = 0) {
     const url = `${BASE_URL}/workspaces/${WORKSPACE_ID}/projects/${projectId}/entities`;
     const params = new URLSearchParams({ limit, offset });
-    const data = await this.fetchWithAuth(`${url}?${params}`);
-    return data.entities || [];
+    const response = await this.fetchWithAuth(`${url}?${params}`);
+    return response.data || response.entities || [];
   }
 
   // Get all entities for a project (handles pagination)
@@ -107,18 +107,32 @@ class V7ApiService {
       let clientName = null;
       let docType = null;
       let clientAddress = null;
+      let originalFilename = null;
+      let fileUrl = null;
 
       Object.entries(fields).forEach(([fieldName, fieldData]) => {
         if (typeof fieldData === 'object' && fieldData !== null) {
-          const value = fieldData.value || fieldData.manual_value?.value;
+          const lowerFieldName = fieldName.toLowerCase();
           
-          if (fieldName.toLowerCase().includes('attorney')) {
+          // Special handling for file field
+          if (lowerFieldName === 'file') {
+            originalFilename = fieldData.manual_value?.original_filename || fieldData.tool_value?.original_filename;
+            fileUrl = fieldData.manual_value?.value || fieldData.tool_value?.value;
+            return;
+          }
+          
+          // V7 API structure: check manual_value first, then tool_value
+          const value = fieldData.manual_value?.value || fieldData.tool_value?.value || fieldData.value;
+          
+          if (!value) return;
+          
+          if (lowerFieldName.includes('attorney') && lowerFieldName.includes('name')) {
             attorneyName = value;
-          } else if (fieldName.toLowerCase().includes('client') && fieldName.toLowerCase().includes('name')) {
+          } else if (lowerFieldName.includes('client') && lowerFieldName.includes('name')) {
             clientName = value;
-          } else if (fieldName.toLowerCase().includes('type') || fieldName.toLowerCase().includes('document')) {
+          } else if (lowerFieldName.includes('type') || lowerFieldName.includes('document')) {
             docType = value;
-          } else if (fieldName.toLowerCase().includes('address')) {
+          } else if (lowerFieldName.includes('address')) {
             clientAddress = value;
           }
         }
@@ -170,17 +184,28 @@ class V7ApiService {
       throw new Error('V7 workspace ID not configured. Please set REACT_APP_V7_WORKSPACE_ID in your .env file and restart the development server.');
     }
     
+    console.log('Starting V7 data fetch...');
+    console.log('Workspace ID:', WORKSPACE_ID);
+    console.log('Base URL:', BASE_URL);
+    
     try {
       // Get all projects
+      console.log('Fetching projects...');
       const projects = await this.getProjects();
+      console.log('Projects response:', projects);
       
       // Collect all entities from all projects
       const allEntities = [];
       const projectInfo = [];
 
       for (const project of projects) {
+        console.log(`Processing project: ${project.name} (${project.id})`);
+        
         const properties = await this.getProjectProperties(project.id);
+        console.log(`Properties for ${project.name}:`, properties);
+        
         const entities = await this.getAllEntities(project.id);
+        console.log(`Entities for ${project.name}: ${entities.length} found`);
         
         allEntities.push(...entities);
         projectInfo.push({

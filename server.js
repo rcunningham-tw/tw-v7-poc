@@ -25,6 +25,9 @@ const V7_WORKSPACE_ID = process.env.REACT_APP_V7_WORKSPACE_ID;
 // Check if credentials are provided
 if (!V7_API_KEY || !V7_WORKSPACE_ID) {
   console.error('Missing V7 API credentials. Please set REACT_APP_V7_API_KEY and REACT_APP_V7_WORKSPACE_ID');
+} else {
+  console.log('V7 API configured with workspace:', V7_WORKSPACE_ID);
+  console.log('V7 API key present:', !!V7_API_KEY);
 }
 
 // Proxy endpoint for V7 API
