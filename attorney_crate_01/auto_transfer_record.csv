@@ -1,0 +1,8 @@
+Transaction_Date,Seller,Buyer,Vehicle_Description,VIN,Sale_Price,Location
+2023-02-14,"Thompson, M.E.","Private Party","2019 Mercedes-Benz E-Class",WDDZF4KB7KA567890,38500,"Fairfield, CT"
+2023-03-15,"Estate of Thompson, R.J.","Stevens, Michael","2021 Lexus RX350",JTJBK1BA5M2123456,42500,"New Haven, CT"
+2023-04-22,"Castellano Motors LLC","Rodriguez, Juan","2020 BMW X5",5UXCR6C09L9D12345,55000,"Stamford, CT"
+2023-05-10,"Henderson Trust","Henderson, William C.","2022 Honda CR-V",2HKRW2H82NH123456,28900,"Hartford, CT"
+2023-06-01,"Marine Sales Inc.","Foster, R.A.","42ft Catalina Sailboat",CAT42SAIL2019WD,125000,"Old Saybrook Marina"
+2023-07-18,"Classic Auto Restoration","Private Collector","1967 Chevrolet Camaro",124377N123456,85000,"Greenwich, CT"
+2023-08-20,"Foster Family","University Student","2019 Jeep Wrangler",1C4HJWDG5KL123456,32000,"Boston, MA"
