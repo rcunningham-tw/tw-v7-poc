@@ -1,0 +1,49 @@
+ARIZONA DEPARTMENT OF TRANSPORTATION
+Motor Vehicle Division
+Title Transfer Application
+
+Application Date: September 15, 2023
+Transaction Type: Private Party Sale
+
+VEHICLE INFORMATION:
+Year: 2021
+Make: Tesla
+Model: Model S
+VIN: 5YJ3E1EA5MF123456
+Odometer: 18,234
+Title Number: AZ2021789456
+
+SELLER INFORMATION:
+Name: Paradise Valley Motors LLC
+Address: 4567 Camelback Road, Paradise Valley, AZ 85253
+Signature: ____________________
+
+BUYER INFORMATION:
+Name: Jennifer Lee
+Address: 789 University Drive, Tempe, AZ 85281
+Driver License: AZ-D09-87-6543
+
+SALE INFORMATION:
+Sale Date: September 14, 2023
+Sale Price: $68,500
+Payment Type: Cashier's Check
+
+EMISSIONS COMPLIANCE:
+☒ Vehicle is exempt (Electric Vehicle)
+☐ Passed emissions test on: N/A
+
+LIENHOLDER INFORMATION:
+None
+
+I certify that the information provided is true and correct.
+
+_______________________________
+Buyer Signature
+
+_______________________________
+Seller Signature
+
+FOR MVD USE ONLY:
+Processed by: ________________
+Date: _______________________
+New Title Number: ____________

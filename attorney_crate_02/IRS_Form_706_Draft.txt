@@ -1,0 +1,50 @@
+DRAFT - ATTORNEY WORK PRODUCT
+Estate Tax Return Preparation Notes
+
+Estate of: Thomas James Sullivan
+Date of Death: January 18, 2021
+Surviving Spouse: Patricia Anne Sullivan
+
+GROSS ESTATE CALCULATION:
+
+Schedule A - Real Estate:
+- Primary Residence (Santa Fe): $1,850,000
+- High Desert Ranch: $2,400,000
+- Scottsdale Condo: $425,000
+
+Schedule B - Stocks and Bonds:
+- Fidelity Account: $892,000
+- Vanguard IRA: $445,000
+- Individual Stocks: $234,000
+
+Schedule C - Mortgages, Notes, Cash:
+- Wells Fargo Checking: $67,890
+- Wells Fargo Savings: $125,000
+- CDs (various): $200,000
+
+Schedule D - Life Insurance:
+- Northwestern Mutual: $500,000 (beneficiary: spouse)
+
+Schedule F - Other Property:
+- Art Collection: $285,000
+- Vehicles: $85,000
+- Personal Property: $50,000
+
+TOTAL GROSS ESTATE: $7,558,890
+
+DEDUCTIONS:
+- Marital Deduction: $7,058,890
+- Funeral Expenses: $15,000
+- Administrative Expenses: $45,000
+- Debts: $125,000
+
+TAXABLE ESTATE: $315,000
+
+Federal Estate Tax: $0 (below 2021 threshold)
+New Mexico Estate Tax: N/A (no state estate tax)
+
+Notes:
+- Portability election to be made
+- Ranch property qualifies for conservation easement
+- Art collection requires separate appraisal
+- Consider QTIP election for trust assets
