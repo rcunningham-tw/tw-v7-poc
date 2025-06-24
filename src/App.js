@@ -1,15 +1,14 @@
 import React, { useState } from 'react';
 import './App.css';
-import clientData from './clientData.json';
-import { fileMapping } from './fileMapping';
+import clientData from './data/clientData.json';
 
 function App() {
   const [activeAttorney, setActiveAttorney] = useState('Morrison');
 
   const attorneys = Object.keys(clientData);
 
-  const getClientFiles = (attorneyName, clientName) => {
-    return fileMapping[attorneyName]?.[clientName] || [];
+  const getClientFiles = (client) => {
+    return client.filenames || [];
   };
 
   const getRelatives = (client) => {
@@ -23,6 +22,32 @@ function App() {
       });
     }
     return relatives;
+  };
+
+  const getConnectedOthers = (client, otherIndividuals) => {
+    return otherIndividuals.filter(person => 
+      person.relationship.toLowerCase().includes(client.name.toLowerCase()) ||
+      person.relationship.toLowerCase().includes(client.name.split(' ')[0].toLowerCase()) ||
+      person.relationship.toLowerCase().includes(client.name.split(' ')[2]?.toLowerCase())
+    );
+  };
+
+  const getFileGraph = () => {
+    const fileMap = new Map();
+    
+    clientData[activeAttorney].clients.forEach(client => {
+      (client.filenames || []).forEach(filename => {
+        if (!fileMap.has(filename)) {
+          fileMap.set(filename, []);
+        }
+        fileMap.get(filename).push(client.name);
+      });
+    });
+    
+    return Array.from(fileMap.entries()).map(([filename, clients]) => ({
+      filename,
+      clients
+    }));
   };
 
   return (
@@ -63,13 +88,20 @@ function App() {
                     {relative.address && <p className="address">Address: {relative.address}</p>}
                   </div>
                 ))}
+                {getConnectedOthers(client, clientData[activeAttorney].other_individuals).map((person, idx) => (
+                  <div key={`other-${idx}`} className="relative-item other-connection">
+                    <p><strong>{person.name}</strong></p>
+                    <p className="relationship">{person.relationship}</p>
+                    <p className="address">Address: {person.address}</p>
+                  </div>
+                ))}
               </div>
 
               <div className="files-section">
                 <h4>Related Files:</h4>
-                {getClientFiles(activeAttorney, client.name).length > 0 ? (
+                {getClientFiles(client).length > 0 ? (
                   <ul className="file-list">
-                    {getClientFiles(activeAttorney, client.name).map((file, idx) => (
+                    {getClientFiles(client).map((file, idx) => (
                       <li key={idx} className="file-item">{file}</li>
                     ))}
                   </ul>
@@ -92,14 +124,22 @@ function App() {
           ))}
         </div>
 
-        <div className="red-herring-section">
-          <h3>Red Herring Files (Unrelated)</h3>
-          <ul className="file-list">
-            {fileMapping[activeAttorney]?.redHerring?.map((file, idx) => (
-              <li key={idx} className="file-item red-herring">{file}</li>
+        <div className="file-graph-section">
+          <h3>File Graph - All Files for {activeAttorney}</h3>
+          <div className="file-graph">
+            {getFileGraph().map(({ filename, clients }, index) => (
+              <div key={index} className="file-node">
+                <div className="file-name">{filename}</div>
+                <div className="client-connections">
+                  {clients.map((clientName, idx) => (
+                    <span key={idx} className="client-tag">{clientName}</span>
+                  ))}
+                </div>
+              </div>
             ))}
-          </ul>
+          </div>
         </div>
+
       </div>
     </div>
   );

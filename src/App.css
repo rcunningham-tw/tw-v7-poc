@@ -9,7 +9,7 @@ body {
 }
 
 .App {
-  max-width: 1400px;
+  max-width: 1800px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -55,8 +55,8 @@ h1 {
 
 .clients-section {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
-  gap: 20px;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 15px;
   margin-bottom: 40px;
 }
 
@@ -64,8 +64,10 @@ h1 {
   background: white;
   border: 1px solid #ddd;
   border-radius: 8px;
-  padding: 20px;
+  padding: 15px;
   box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  font-size: 14px;
+  position: relative;
 }
 
 .client-card h3 {
@@ -102,6 +104,11 @@ h1 {
 
 .relative-item p {
   margin: 5px 0;
+}
+
+.relative-item.other-connection {
+  background: #e8f5e9;
+  border-left: 4px solid #4CAF50;
 }
 
 .address {
@@ -172,4 +179,61 @@ h1 {
 .file-item.red-herring {
   background: #ffeaa7;
   color: #856404;
+}
+
+.file-graph-section {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.file-graph-section h3 {
+  color: #2c3e50;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.file-graph {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+.file-node {
+  background: #f0f4f8;
+  border: 1px solid #d1d9e6;
+  border-radius: 8px;
+  padding: 15px;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.file-node:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.file-name {
+  font-family: 'Courier New', monospace;
+  font-size: 14px;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 10px;
+  word-break: break-all;
+}
+
+.client-connections {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.client-tag {
+  background: #4CAF50;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  font-weight: 500;
 }

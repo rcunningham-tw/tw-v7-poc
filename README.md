@@ -26,7 +26,7 @@ Each crate contains 10-15 documents representing 3-5 clients with intentionally 
 - **Relationships**: Document relationships are intentionally non-obvious (different naming conventions, creation dates)
 
 ## Client Personas
-See `client_personas.json` for detailed information about the synthetic clients represented in each crate.
+See `clientData.json` for detailed information about the synthetic clients represented in each crate.
 
 ## Usage
 This data is intended for testing document processing algorithms that can:
