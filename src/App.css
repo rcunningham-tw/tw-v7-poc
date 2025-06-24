@@ -20,6 +20,69 @@ h1 {
   margin-bottom: 30px;
 }
 
+/* V7 Integration Controls */
+.v7-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+  padding: 15px;
+  background-color: #e8f0ff;
+  border-radius: 8px;
+  border: 1px solid #b8d4ff;
+}
+
+.v7-toggle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.v7-toggle input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  cursor: pointer;
+}
+
+.loading {
+  color: #1976d2;
+  font-style: italic;
+}
+
+.error {
+  color: #d32f2f;
+  font-weight: 500;
+}
+
+.v7-summary {
+  color: #1976d2;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.v7-controls button {
+  background-color: #1976d2;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.v7-controls button:hover:not(:disabled) {
+  background-color: #1565c0;
+}
+
+.v7-controls button:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}
+
 .attorney-tabs {
   display: flex;
   gap: 10px;
@@ -216,6 +279,81 @@ h1 {
 .file-node:has(.client-connections:empty) {
   background: #fff3cd;
   border-color: #ffeaa7;
+}
+
+/* V7 Data Styles */
+.client-card.has-v7 {
+  border-color: #1976d2;
+  box-shadow: 0 2px 4px rgba(25, 118, 210, 0.2);
+}
+
+.client-card.v7-only {
+  background-color: #f3f8ff;
+}
+
+.v7-indicator {
+  background-color: #1976d2;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 11px;
+  font-weight: bold;
+  margin-left: 10px;
+  vertical-align: middle;
+}
+
+.v7-fields {
+  background-color: #e8f0ff;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 15px 0;
+  border: 1px solid #b8d4ff;
+}
+
+.v7-fields h4 {
+  margin-top: 0;
+  color: #1565c0;
+  font-size: 14px;
+}
+
+.v7-fields p {
+  margin: 5px 0;
+  font-size: 13px;
+  color: #333;
+}
+
+.files-section h5 {
+  color: #555;
+  margin: 10px 0 5px;
+  font-size: 14px;
+}
+
+.file-list.v7-files .file-item {
+  background-color: #e8f0ff;
+  border-left: 3px solid #1976d2;
+}
+
+.entity-id {
+  color: #666;
+  font-size: 12px;
+  margin-left: 5px;
+}
+
+/* V7 File Node Styles */
+.file-node.v7 {
+  background-color: #e8f0ff;
+  border-color: #1976d2;
+}
+
+.v7-badge {
+  background-color: #1976d2;
+  color: white;
+  padding: 2px 6px;
+  border-radius: 3px;
+  font-size: 10px;
+  font-weight: bold;
+  margin-left: 8px;
+  display: inline-block;
 }
 
 .file-name {
