@@ -35,6 +35,7 @@ function App() {
   const getFileGraph = () => {
     const fileMap = new Map();
     
+    // Add files assigned to clients
     clientData[activeAttorney].clients.forEach(client => {
       (client.filenames || []).forEach(filename => {
         if (!fileMap.has(filename)) {
@@ -44,10 +45,94 @@ function App() {
       });
     });
     
+    // Add red herring files with empty client arrays
+    const redHerringFiles = getRedHerringFiles();
+    redHerringFiles.forEach(filename => {
+      if (!fileMap.has(filename)) {
+        fileMap.set(filename, []);
+      }
+    });
+    
     return Array.from(fileMap.entries()).map(([filename, clients]) => ({
       filename,
       clients
     }));
+  };
+
+  const getRedHerringFiles = () => {
+    // Define all files for each attorney (manually curated based on the data directory)
+    const allFilesByAttorney = {
+      Morrison: [
+        'Family_Contact_List.csv',
+        'Insurance_Claim_2021.txt',
+        'LastWillTestament_2023_draft.txt',
+        'Property_Transfer_Deed.docx',
+        'TRUST_AGREEMENT_2022.txt',
+        'auto_transfer_record.csv',
+        'beneficiary_info_mitchell.txt',
+        'estate_planning_letter_jc.docx',
+        'marina_lease_agreement.docx',
+        'medical_directive_draft.txt',
+        'misc_correspondence_2023.txt',
+        'tax_summary_2022.txt',
+        'vehicle_sale_agreement_2023.txt',
+        'will_revision_notes.txt'
+      ],
+      Fitzgerald: [
+        '2023_HOLOGRAPHIC_WILL.txt',
+        'AZ_DMV_Title_Transfer.txt',
+        'IRS_Form_706_Draft.txt',
+        'PODER_NOTARIAL_Martinez.txt',
+        'SullivanTrustAmendment_03.pdf',
+        'business_valuation_2023Q2.csv',
+        'correspondence_08_15_23.txt',
+        'medical_lien_notice.txt',
+        'mineral_rights_assignment.docx',
+        'native_american_artifact_appraisal.docx',
+        'ranch_deed_1987.txt',
+        'restaurant_lease_2019.txt'
+      ],
+      Yamamoto: [
+        'ENVIRONMENTAL_TRUST_DEED.md',
+        'OLCC_license_transfer.txt',
+        'brewery_acquisition_loi.txt',
+        'carbon_offset_portfolio.csv',
+        'employee_handbook_acknowledgment.pdf',
+        'hop_farm_purchase_2021.txt',
+        'maritime_insurance_claim.docx',
+        'orcas_island_property.eml',
+        'restricted_stock_agreement_MSFT.json',
+        'solar_investment_k1_2022.txt',
+        'startup_equity_docs.xml',
+        'vessel_documentation_2023.yaml'
+      ],
+      Blackwell: [
+        'MUSIC_ROYALTY_AUDIT_2023Q2.tsv',
+        'NFL_pension_distribution.html',
+        'annual_disclosure_2023.tex.md',
+        'caribbean_development_permits.json5',
+        'entertainment_venue_licenses.ini',
+        'offshore_company_formation.tex',
+        'production_company_distribution.toml',
+        'recording_studio_lease.asc',
+        'stadium_naming_rights.sql',
+        'vessel_registration_malta.log',
+        'yacht_charter_agreement.rtf'
+      ]
+    };
+
+    const attorneyFiles = allFilesByAttorney[activeAttorney] || [];
+    
+    // Get all files assigned to clients
+    const assignedFiles = new Set();
+    clientData[activeAttorney].clients.forEach(client => {
+      (client.filenames || []).forEach(filename => {
+        assignedFiles.add(filename);
+      });
+    });
+
+    // Return files that aren't assigned to any client
+    return attorneyFiles.filter(file => !assignedFiles.has(file));
   };
 
   return (
@@ -113,17 +198,6 @@ function App() {
           ))}
         </div>
 
-        <div className="other-section">
-          <h3>Other Individuals</h3>
-          {clientData[activeAttorney].other_individuals.map((person, index) => (
-            <div key={index} className="other-person">
-              <p><strong>{person.name}</strong></p>
-              <p className="relationship">{person.relationship}</p>
-              <p className="address">{person.address}</p>
-            </div>
-          ))}
-        </div>
-
         <div className="file-graph-section">
           <h3>File Graph - All Files for {activeAttorney}</h3>
           <div className="file-graph">
@@ -139,6 +213,7 @@ function App() {
             ))}
           </div>
         </div>
+
 
       </div>
     </div>

@@ -55,9 +55,20 @@ h1 {
 
 .clients-section {
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   gap: 15px;
   margin-bottom: 40px;
+  max-width: 100%;
+}
+
+/* When there are 5 clients, ensure they fit on one row */
+.clients-section:has(.client-card:nth-child(5)) {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+/* When there are 4 clients, let them grow to fill space */
+.clients-section:has(.client-card:nth-child(4)):not(:has(.client-card:nth-child(5))) {
+  grid-template-columns: repeat(4, 1fr);
 }
 
 .client-card {
@@ -135,19 +146,6 @@ h1 {
   font-style: italic;
 }
 
-.other-section {
-  background: white;
-  border: 1px solid #ddd;
-  border-radius: 8px;
-  padding: 20px;
-  margin-bottom: 30px;
-}
-
-.other-section h3 {
-  color: #2c3e50;
-  margin-top: 0;
-}
-
 .other-person {
   background: #f8f9fa;
   padding: 15px;
@@ -212,6 +210,12 @@ h1 {
 .file-node:hover {
   transform: translateY(-2px);
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Style for files with no client connections (red herring files) */
+.file-node:has(.client-connections:empty) {
+  background: #fff3cd;
+  border-color: #ffeaa7;
 }
 
 .file-name {
