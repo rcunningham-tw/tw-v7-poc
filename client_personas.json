@@ -25,7 +25,16 @@
         "vacation_home": "18 Sunset Beach Lane, Madison, CT 06443",
         "vehicles": ["2019 Mercedes-Benz E-Class", "2021 Lexus RX350"],
         "investment_accounts": ["Vanguard", "Fidelity", "Charles Schwab"]
-      }
+      },
+      "filenames": [
+        "auto_transfer_record.csv",
+        "beneficiary_info_mitchell.txt",
+        "Family_Contact_List.csv",
+        "LastWillTestament_2023_draft.txt",
+        "tax_summary_2022.txt",
+        "vehicle_sale_agreement_2023.txt",
+        "will_revision_notes.txt"
+      ]
     },
     {
       "name": "James Anthony Castellano",
@@ -56,7 +65,13 @@
         "rental_properties": ["45 Main Street, Darien, CT 06820", "789 Commerce Drive, Unit A, Norwalk, CT 06854"],
         "vehicles": ["2020 BMW X5", "2018 Ford F-150", "1967 Chevrolet Camaro (classic)"],
         "business": "Castellano Construction LLC"
-      }
+      },
+      "filenames": [
+        "auto_transfer_record.csv",
+        "estate_planning_letter_jc.docx",
+        "Family_Contact_List.csv",
+        "medical_directive_draft.txt"
+      ]
     },
     {
       "name": "Dorothy June Henderson",
@@ -82,7 +97,12 @@
         "vehicles": ["2022 Honda CR-V"],
         "artwork_collection": "Various pieces valued at $250,000+",
         "investment_accounts": ["TD Ameritrade", "Morgan Stanley"]
-      }
+      },
+      "filenames": [
+        "Family_Contact_List.csv",
+        "tax_summary_2022.txt",
+        "TRUST_AGREEMENT_2022.txt"
+      ]
     },
     {
       "name": "Richard Alan Foster",
@@ -108,7 +128,12 @@
         "boat": "42-foot Catalina Sailboat 'Wind Dancer'",
         "vehicles": ["2021 Tesla Model Y", "2019 Jeep Wrangler"],
         "retirement_accounts": ["401k with Pratt & Whitney", "IRA with E*TRADE"]
-      }
+      },
+      "filenames": [
+        "auto_transfer_record.csv",
+        "Family_Contact_List.csv",
+        "Property_Transfer_Deed.docx"
+      ]
     }
   ],
   "other_individuals": [
@@ -161,7 +186,12 @@
           "vehicles": ["2022 GMC Sierra Denali", "2020 Cadillac Escalade", "2018 Porsche 911"],
           "investment_accounts": ["Edward Jones", "Wells Fargo Advisors"],
           "business": "Martinez Commercial Real Estate Holdings LLC"
-        }
+        },
+        "filenames": [
+          "business_valuation_2023Q2.csv",
+          "mineral_rights_assignment.docx",
+          "PODER_NOTARIAL_Martinez.txt"
+        ]
       },
       {
         "name": "Patricia Anne Sullivan",
@@ -188,7 +218,13 @@
           "vehicles": ["2021 Lincoln Navigator", "1965 Ford Mustang Convertible (classic)"],
           "ranch_property": "Sullivan Ranch - 320 acres near Taos, NM",
           "investment_accounts": ["Raymond James", "Merrill Lynch"]
-        }
+        },
+        "filenames": [
+          "IRS_Form_706_Draft.txt",
+          "native_american_artifact_appraisal.docx",
+          "ranch_deed_1987.txt",
+          "SullivanTrustAmendment_03.pdf"
+        ]
       },
       {
         "name": "David Michael Chen",
@@ -220,7 +256,13 @@
           "vehicles": ["2023 Range Rover Sport", "2022 Tesla Model S", "2021 BMW M5"],
           "business": "Chen Healthcare Management Group",
           "investment_accounts": ["Goldman Sachs", "JP Morgan Private Bank"]
-        }
+        },
+        "filenames": [
+          "AZ_DMV_Title_Transfer.txt",
+          "business_valuation_2023Q2.csv",
+          "correspondence_08_15_23.txt",
+          "medical_lien_notice.txt"
+        ]
       },
       {
         "name": "Maria Guadalupe Hernandez",
@@ -247,7 +289,12 @@
           "vehicles": ["2022 Chevrolet Tahoe", "2020 Toyota Camry"],
           "restaurant": "La Casa Hernandez - Family Restaurant Chain (3 locations)",
           "investment_accounts": ["Schwab", "Ameriprise Financial"]
-        }
+        },
+        "filenames": [
+          "2023_HOLOGRAPHIC_WILL.txt",
+          "business_valuation_2023Q2.csv",
+          "restaurant_lease_2019.txt"
+        ]
       }
     ],
     "other_individuals": [
@@ -301,7 +348,12 @@
           "stock_options": "Microsoft Corporation - vested and unvested",
           "investment_accounts": ["Vanguard", "Fidelity", "E*TRADE"],
           "startup_investments": ["Various Seattle tech startups - $2M portfolio"]
-        }
+        },
+        "filenames": [
+          "orcas_island_property.eml",
+          "restricted_stock_agreement_MSFT.json",
+          "startup_equity_docs.xml"
+        ]
       },
       {
         "name": "Captain Robert Douglas MacKenzie",
@@ -334,7 +386,11 @@
           "waterfront_properties": ["Commercial dock facility - Port of Tacoma", "Marina slip - Gig Harbor"],
           "vehicles": ["2022 Ford F-350 Super Duty", "2020 Toyota Land Cruiser"],
           "investment_accounts": ["Charles Schwab", "TD Ameritrade"]
-        }
+        },
+        "filenames": [
+          "maritime_insurance_claim.docx",
+          "vessel_documentation_2023.yaml"
+        ]
       },
       {
         "name": "Dr. Emily Chen-Nakamura",
@@ -363,7 +419,13 @@
           "solar_farm_investment": "Columbia Gorge Solar Collective - 25% stake",
           "investment_accounts": ["ESG-focused funds with Vanguard", "Green Century Funds"],
           "carbon_offset_portfolio": "Various reforestation and renewable energy projects"
-        }
+        },
+        "filenames": [
+          "carbon_offset_portfolio.csv",
+          "employee_handbook_acknowledgment.pdf",
+          "ENVIRONMENTAL_TRUST_DEED.md",
+          "solar_investment_k1_2022.txt"
+        ]
       },
       {
         "name": "Michael Sean O'Sullivan",
@@ -391,7 +453,12 @@
           "vehicles": ["2022 Mercedes-Benz Sprinter Van (company)", "2021 Audi e-tron GT", "1973 Volkswagen Bus (restored)"],
           "investment_accounts": ["Northwestern Mutual", "Morgan Stanley"],
           "hop_farm": "45 acres in Willamette Valley, OR"
-        }
+        },
+        "filenames": [
+          "brewery_acquisition_loi.txt",
+          "hop_farm_purchase_2021.txt",
+          "OLCC_license_transfer.txt"
+        ]
       }
     ],
     "other_individuals": [
@@ -447,7 +514,11 @@
           "record_label": "Fuego Latino Records LLC",
           "offshore_accounts": ["Cayman National Bank", "Swiss Private Banking"],
           "investment_accounts": ["UBS Wealth Management", "Credit Suisse"]
-        }
+        },
+        "filenames": [
+          "MUSIC_ROYALTY_AUDIT_2023Q2.tsv",
+          "recording_studio_lease.asc"
+        ]
       },
       {
         "name": "Demarco Tyrell Washington",
@@ -477,7 +548,11 @@
           "nfl_contracts": "Former Miami Dolphins - Deferred compensation & endorsements",
           "restaurant_chain": "Washington's Wings & Things - 8 Florida locations",
           "offshore_entities": ["Bahamas International Business Company", "BVI Holdings"]
-        }
+        },
+        "filenames": [
+          "NFL_pension_distribution.html",
+          "stadium_naming_rights.sql"
+        ]
       },
       {
         "name": "Captain Francesco DiMarco",
@@ -511,7 +586,11 @@
           "marina_properties": ["Fort Lauderdale Marina Slips (5)", "Miami Beach Marina (3 slips)"],
           "vehicles": ["2022 Bentley Continental GT", "2021 Range Rover SVR", "Classic 1969 Ferrari Dino"],
           "offshore_registrations": ["Malta Maritime Registry", "Marshall Islands Flag"]
-        }
+        },
+        "filenames": [
+          "vessel_registration_malta.log",
+          "yacht_charter_agreement.rtf"
+        ]
       },
       {
         "name": "Alejandra Cristina Mendoza-Perez",
@@ -541,7 +620,11 @@
           "art_collection": "Latin American contemporary art - $8M valuation",
           "offshore_holdings": ["Panama Real Estate Trust", "Dominican Republic Development Corp"],
           "investment_accounts": ["Julius Baer", "BNP Paribas Wealth Management"]
-        }
+        },
+        "filenames": [
+          "caribbean_development_permits.json5",
+          "offshore_company_formation.tex"
+        ]
       },
       {
         "name": "Jonathan Blake Sterling",
@@ -572,7 +655,12 @@
           "crypto_holdings": "Digital asset portfolio - various exchanges",
           "offshore_structures": ["Bermuda Entertainment Holdings", "Cayman Events Management Ltd"],
           "investment_accounts": ["Deutsche Bank Wealth Management", "HSBC Private Banking"]
-        }
+        },
+        "filenames": [
+          "annual_disclosure_2023.tex.md",
+          "entertainment_venue_licenses.ini",
+          "production_company_distribution.toml"
+        ]
       }
     ],
     "other_individuals": [
