@@ -1,0 +1,153 @@
+// Mendoza Caribbean Development Projects
+// Permit and Approval Tracking System
+// Last Updated: October 19, 2023
+
+{
+  "developer": {
+    "name": "Alejandra Cristina Mendoza-Perez",
+    "company": "Mendoza International Development Group",
+    "headquarters": "1500 Brickell Avenue, Suite 2500, Miami, FL 33131",
+    "caribbean_office": "Plaza Andalucia, Suite 400, Santo Domingo, DR"
+  },
+  
+  "turks_and_caicos_project": {
+    "project_name": "Grace Bay Luxury Villas",
+    "location": "Grace Bay Beach, Providenciales",
+    "total_units": 24,
+    "project_value": "$45,000,000",
+    
+    "permits": {
+      "planning_permission": {
+        "number": "PP/2023/0234",
+        "issued": "2023-03-15",
+        "expiry": "2025-03-14",
+        "conditions": [
+          "Maximum height 35 feet",
+          "Minimum 50ft setback from high water mark",
+          "Native landscaping required"
+        ]
+      },
+      
+      "environmental_clearance": {
+        "number": "DEMA/2023/089",
+        "issued": "2023-02-28",
+        "turtle_nesting_provisions": true,
+        "coral_protection_zone": "100m offshore"
+      },
+      
+      "building_permits": [
+        { "phase": 1, "units": "1-8", "permit": "BP/2023/445", "status": "Active" },
+        { "phase": 2, "units": "9-16", "permit": "BP/2023/446", "status": "Pending" },
+        { "phase": 3, "units": "17-24", "permit": "TBD", "status": "Not Applied" }
+      ],
+      
+      "investment_incentive": {
+        "certificate": "TCI-INV-2023-067",
+        "duty_exemption": "100% on construction materials",
+        "tax_holiday": "10 years from completion"
+      }
+    }
+  },
+  
+  "dominican_republic_project": {
+    "project_name": "Punta Cana Ocean Resort Phase III",
+    "location": "Bavaro Beach, La Altagracia",
+    "total_rooms": 450,
+    "project_value": "$78,000,000",
+    
+    "permits": {
+      "tourism_license": {
+        "number": "MITUR-2022-3456",
+        "classification": "5-star all-inclusive",
+        "issued_by": "Ministry of Tourism"
+      },
+      
+      "environmental_license": {
+        "number": "ENV-2022-PC-234",
+        "eia_approved": "2022-11-30",
+        "mangrove_offset": "25 hectares preservation"
+      },
+      
+      "construction_license": {
+        "number": "MOPC-2023-1789",
+        "issued": "2023-01-15",
+        "completion_deadline": "2025-12-31",
+        "local_employment_requirement": "60%"
+      },
+      
+      "confotur_benefits": {
+        "law": "158-01",
+        "exemption_period": "15 years",
+        "import_duty_exemption": true,
+        "income_tax_exemption": true,
+        "property_tax_exemption": true
+      }
+    },
+    
+    "partnerships": {
+      "local_partner": "Grupo Mendez Hospitality",
+      "ownership_split": "65/35",
+      "operator": "Viva Resorts International"
+    }
+  },
+  
+  "panama_city_project": {
+    "project_name": "Punta Pacifica Sky Residences",
+    "location": "Punta Pacifica, Panama City",
+    "total_units": 180,
+    "floors": 52,
+    "project_value": "$120,000,000",
+    
+    "permits": {
+      "mivi_approval": {
+        "resolution": "MIVI-2023-567",
+        "density_approved": "300 units/hectare",
+        "height_variance": "Approved to 200m"
+      },
+      
+      "environmental_impact": {
+        "number": "ANAM-2023-234",
+        "bird_strike_study": "Completed",
+        "wind_study": "Approved"
+      },
+      
+      "fire_department": {
+        "certificate": "BCBRP-2023-890",
+        "helipad_required": true,
+        "refuge_floors": "Every 15 floors"
+      },
+      
+      "aviation_authority": {
+        "approval": "AAC-2023-123",
+        "obstacle_lighting": "Required above 150m",
+        "crane_permits": "Separate application needed"
+      }
+    },
+    
+    "financing": {
+      "construction_loan": "Banco Nacional de Panama",
+      "amount": "$80,000,000",
+      "investor_visa_eligible": true,
+      "minimum_investment": "$300,000"
+    }
+  },
+  
+  // Banking relationships for permits and fees
+  "payment_accounts": {
+    "turks_caicos": {
+      "bank": "First Caribbean International",
+      "account": "****5678",
+      "currency": "USD"
+    },
+    "dominican_republic": {
+      "bank": "Banco Popular Dominicano", 
+      "account": "****9012",
+      "currency": "DOP"
+    },
+    "panama": {
+      "bank": "Banco Nacional de Panama",
+      "account": "****3456", 
+      "currency": "USD"
+    }
+  }
+}

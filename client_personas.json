@@ -1,5 +1,5 @@
 {
-  "attorney_crate_01": {
+  "Morrison": {
     "clients": [
     {
       "name": "Margaret Elizabeth Thompson",
@@ -129,7 +129,7 @@
     }
   ]
   },
-  "attorney_crate_02": {
+  "Fitzgerald": {
     "clients": [
       {
         "name": "Roberto Carlos Martinez",
@@ -273,7 +273,7 @@
       }
     ]
   },
-  "attorney_crate_03": {
+  "Yamamoto": {
     "clients": [
       {
         "name": "Alexander James Mitchell",
@@ -414,6 +414,192 @@
         "name": "Patrick Finnegan",
         "relationship": "Head brewmaster for O'Sullivan Brewing",
         "address": "3421 Alberta Street, Portland, OR 97211"
+      }
+    ]
+  },
+  "Blackwell": {
+    "clients": [
+      {
+        "name": "Marcus Antonio Rivera",
+        "dob": "1976-09-12",
+        "address": "1847 Star Island Drive, Miami Beach, FL 33139",
+        "phone": "(305) 555-9234",
+        "ssn": "593-84-7621",
+        "spouse": "Valentina Sofia Rivera",
+        "children": [
+          {
+            "name": "Sebastian Marcus Rivera",
+            "dob": "2003-05-18",
+            "address": "890 Brickell Avenue, Unit 4502, Miami, FL 33131"
+          },
+          {
+            "name": "Isabella Rose Rivera",
+            "dob": "2006-11-22",
+            "address": "1847 Star Island Drive, Miami Beach, FL 33139"
+          }
+        ],
+        "assets": {
+          "primary_residence": "1847 Star Island Drive, Miami Beach, FL 33139",
+          "caribbean_properties": ["Villa Serenidad - St. Barts", "Beachfront Estate - Turks and Caicos"],
+          "vehicles": ["2023 Lamborghini Huracán", "2022 Rolls-Royce Cullinan", "2023 Ferrari Roma"],
+          "yacht": "M/Y Tropical Dreams - 185ft Benetti",
+          "music_studio": "Rivera Sound Studios - Miami Design District",
+          "record_label": "Fuego Latino Records LLC",
+          "offshore_accounts": ["Cayman National Bank", "Swiss Private Banking"],
+          "investment_accounts": ["UBS Wealth Management", "Credit Suisse"]
+        }
+      },
+      {
+        "name": "Demarco Tyrell Washington",
+        "dob": "1988-02-24",
+        "address": "9567 Ocean Drive Penthouse, Miami Beach, FL 33141",
+        "phone": "(786) 555-4567",
+        "ssn": "597-23-8945",
+        "spouse": "Jasmine Nicole Washington",
+        "children": [
+          {
+            "name": "Demarco Tyrell Washington Jr.",
+            "dob": "2012-07-14",
+            "address": "9567 Ocean Drive Penthouse, Miami Beach, FL 33141"
+          },
+          {
+            "name": "Aaliyah Grace Washington",
+            "dob": "2015-03-28",
+            "address": "9567 Ocean Drive Penthouse, Miami Beach, FL 33141"
+          }
+        ],
+        "assets": {
+          "primary_residence": "9567 Ocean Drive Penthouse, Miami Beach, FL 33141",
+          "investment_properties": ["Wynwood Commercial Complex", "Coral Gables Luxury Condos (12 units)"],
+          "bahamas_estate": "Paradise Island Compound - Nassau, Bahamas",
+          "vehicles": ["2023 McLaren 720S", "2023 Maybach S-Class", "Custom Mercedes G-Wagon"],
+          "business": "DW Sports Management & Entertainment",
+          "nfl_contracts": "Former Miami Dolphins - Deferred compensation & endorsements",
+          "restaurant_chain": "Washington's Wings & Things - 8 Florida locations",
+          "offshore_entities": ["Bahamas International Business Company", "BVI Holdings"]
+        }
+      },
+      {
+        "name": "Captain Francesco DiMarco",
+        "dob": "1964-07-08",
+        "address": "2341 Bayshore Drive, Coconut Grove, FL 33133",
+        "phone": "(305) 555-7890",
+        "ssn": "592-67-3421",
+        "spouse": "Isabella Maria DiMarco",
+        "children": [
+          {
+            "name": "Antonio Francesco DiMarco",
+            "dob": "1991-04-15",
+            "address": "567 Las Olas Boulevard, Fort Lauderdale, FL 33301"
+          },
+          {
+            "name": "Sophia Valentina DiMarco",
+            "dob": "1994-09-30",
+            "address": "234 Worth Avenue, Palm Beach, FL 33480"
+          },
+          {
+            "name": "Marco Giovanni DiMarco",
+            "dob": "1997-12-18",
+            "address": "2341 Bayshore Drive, Coconut Grove, FL 33133"
+          }
+        ],
+        "assets": {
+          "primary_residence": "2341 Bayshore Drive, Coconut Grove, FL 33133",
+          "vacation_home": "789 Old Town Key West, FL 33040",
+          "cruise_business": "DiMarco Luxury Yacht Charters LLC",
+          "fleet": ["M/Y Azure Dreams (220ft)", "M/Y Caribbean Star (180ft)", "M/Y Miami Vice (150ft)"],
+          "marina_properties": ["Fort Lauderdale Marina Slips (5)", "Miami Beach Marina (3 slips)"],
+          "vehicles": ["2022 Bentley Continental GT", "2021 Range Rover SVR", "Classic 1969 Ferrari Dino"],
+          "offshore_registrations": ["Malta Maritime Registry", "Marshall Islands Flag"]
+        }
+      },
+      {
+        "name": "Alejandra Cristina Mendoza-Perez",
+        "dob": "1982-11-25",
+        "address": "4578 Fisher Island Drive, Unit 7302, Fisher Island, FL 33109",
+        "phone": "(786) 555-2345",
+        "ssn": "594-82-6789",
+        "spouse": "Carlos Eduardo Perez",
+        "children": [
+          {
+            "name": "Cristina Marie Perez",
+            "dob": "2008-06-12",
+            "address": "4578 Fisher Island Drive, Unit 7302, Fisher Island, FL 33109"
+          },
+          {
+            "name": "Eduardo Carlos Perez Jr.",
+            "dob": "2011-10-08",
+            "address": "4578 Fisher Island Drive, Unit 7302, Fisher Island, FL 33109"
+          }
+        ],
+        "assets": {
+          "primary_residence": "4578 Fisher Island Drive, Unit 7302, Fisher Island, FL 33109",
+          "development_projects": ["Mendoza Towers - Brickell", "Sunset Harbor Residences", "Caribbean Plaza - Dominican Republic"],
+          "hotels": ["Boutique Hotel Mendoza - South Beach", "Resort property - Punta Cana"],
+          "vehicles": ["2023 Bentley Bentayga", "2022 Porsche Taycan Turbo S", "2023 Mercedes AMG GT"],
+          "private_jet": "Gulfstream G650 (fractional ownership)",
+          "art_collection": "Latin American contemporary art - $8M valuation",
+          "offshore_holdings": ["Panama Real Estate Trust", "Dominican Republic Development Corp"],
+          "investment_accounts": ["Julius Baer", "BNP Paribas Wealth Management"]
+        }
+      },
+      {
+        "name": "Jonathan Blake Sterling",
+        "dob": "1970-03-17",
+        "address": "8912 Sunset Islands Drive, Miami Beach, FL 33140",
+        "phone": "(305) 555-6123",
+        "ssn": "591-45-3876",
+        "spouse": "Alexandra Nicole Sterling",
+        "children": [
+          {
+            "name": "Blake Alexander Sterling",
+            "dob": "1998-08-20",
+            "address": "456 Lincoln Road, Apt 2001, Miami Beach, FL 33139"
+          },
+          {
+            "name": "Nicole Marie Sterling",
+            "dob": "2001-02-14",
+            "address": "University of Miami, Coral Gables, FL 33146"
+          }
+        ],
+        "assets": {
+          "primary_residence": "8912 Sunset Islands Drive, Miami Beach, FL 33140",
+          "entertainment_venue": "Sterling Nightclub Group - 5 Miami venues",
+          "production_company": "Sterling Entertainment Productions LLC",
+          "caribbean_resort": "Sterling Bay Resort - Antigua",
+          "vehicles": ["2023 Aston Martin DBX", "2022 Ferrari F8 Spider", "2021 Rolls-Royce Dawn"],
+          "yacht": "S/Y Sterling Star - 120ft sailing yacht",
+          "crypto_holdings": "Digital asset portfolio - various exchanges",
+          "offshore_structures": ["Bermuda Entertainment Holdings", "Cayman Events Management Ltd"],
+          "investment_accounts": ["Deutsche Bank Wealth Management", "HSBC Private Banking"]
+        }
+      }
+    ],
+    "other_individuals": [
+      {
+        "name": "Luis Miguel Santana",
+        "relationship": "Music producer partner of Marcus Rivera",
+        "address": "234 Biscayne Boulevard, Unit 3401, Miami, FL 33132"
+      },
+      {
+        "name": "Diamond Jackson",
+        "relationship": "Sports agent working with Demarco Washington",
+        "address": "567 Aventura Boulevard, Aventura, FL 33180"
+      },
+      {
+        "name": "Captain Roberto Gonzalez",
+        "relationship": "Yacht captain for Francesco DiMarco's fleet",
+        "address": "890 Marina Way, Fort Lauderdale, FL 33316"
+      },
+      {
+        "name": "Maria Elena Vasquez",
+        "relationship": "Business partner of Alejandra Mendoza-Perez",
+        "address": "4576 Fisher Island Drive, Unit 5201, Fisher Island, FL 33109"
+      },
+      {
+        "name": "Vincent 'Vinny' Russo",
+        "relationship": "Nightclub operations manager for Jonathan Sterling",
+        "address": "789 Collins Avenue, Apt 1205, Miami Beach, FL 33141"
       }
     ]
   }

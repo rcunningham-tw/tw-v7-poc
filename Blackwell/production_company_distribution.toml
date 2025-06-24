@@ -1,0 +1,96 @@
+# Sterling Moon Productions LLC
+# Film Distribution Rights Agreement Tracking
+# Generated: 2023-10-20
+
+[company]
+name = "Sterling Moon Productions LLC"
+owner = "Jonathan Blake Sterling"
+address = "4567 Biscayne Boulevard, Miami, FL 33137"
+tax_id = "88-9876543"
+
+[productions.miami_nights_2023]
+title = "Miami Nights"
+type = "Feature Film"
+budget = 12_500_000
+completion_date = "2023-08-15"
+runtime = "118 minutes"
+rating = "R"
+
+  [productions.miami_nights_2023.distribution.theatrical]
+  distributor = "A24 Films"
+  territories = ["North America"]
+  advance = 3_500_000
+  revenue_split = "65/35"
+  release_date = "2023-11-24"
+  minimum_screens = 2500
+
+  [productions.miami_nights_2023.distribution.streaming]
+  platform = "Netflix"
+  territories = ["Worldwide excluding NA"]
+  license_fee = 8_000_000
+  term_years = 3
+  availability_date = "2024-02-01"
+
+  [productions.miami_nights_2023.cast]
+  lead_1 = "Michael B. Jordan"
+  lead_1_fee = 2_000_000
+  lead_2 = "Zendaya"
+  lead_2_fee = 1_750_000
+  supporting = ["Luis Guzman", "Rosario Dawson", "John Leguizamo"]
+
+[productions.caribbean_queens_series]
+title = "Caribbean Queens"
+type = "Limited Series"
+episodes = 8
+budget_per_episode = 2_500_000
+completion_date = "2023-09-30"
+
+  [productions.caribbean_queens_series.distribution]
+  platform = "HBO Max"
+  territories = ["Global"]
+  license_fee = 25_000_000
+  term_years = 5
+  backend_participation = true
+  participation_threshold = 50_000_000
+
+  [productions.caribbean_queens_series.filming_locations]
+  primary = "Trinidad and Tobago"
+  secondary = ["Barbados", "Jamaica", "Miami"]
+  tax_incentives_received = 4_800_000
+
+[productions.sound_of_sunrise_doc]
+title = "Sound of Sunrise"
+type = "Documentary"
+subject = "Miami Music Scene"
+budget = 850_000
+completion_date = "2023-07-01"
+
+  [productions.sound_of_sunrise_doc.distribution]
+  festival_sales = 125_000
+  streaming_presale = "Hulu"
+  streaming_fee = 400_000
+  theatrical_limited = true
+  
+  [productions.sound_of_sunrise_doc.featured_artists]
+  artists = ["Gloria Estefan", "Pitbull", "DJ Khaled", "Bad Bunny"]
+  music_clearances = 235_000
+
+[bank_accounts.production]
+bank = "City National Bank"
+account_name = "Sterling Moon Productions LLC"
+account_number = "****7890"
+current_balance = 4_567_890
+
+[bank_accounts.escrow]
+bank = "JP Morgan Chase"
+account_name = "Production Escrow"
+account_number = "****3456"
+held_for = "Miami Nights sequel pre-production"
+amount = 2_000_000
+
+[insurance.production]
+carrier = "Chubb Entertainment"
+policy_number = "ENT-2023-4567"
+coverage_limit = 50_000_000
+errors_omissions = 10_000_000
+completion_bond = "Film Finances Inc"

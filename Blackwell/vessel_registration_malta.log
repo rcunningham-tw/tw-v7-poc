@@ -1,0 +1,47 @@
+2023-10-15 09:23:41 [INFO] Malta Maritime Authority - Vessel Registration System
+2023-10-15 09:23:41 [INFO] User login: francesco.dimarco@dimarcoyachts.com
+2023-10-15 09:23:42 [INFO] IP Address: 173.45.234.122 (Miami, FL, USA)
+
+2023-10-15 09:24:15 [ACTION] Accessing vessel record: MLT-2019-4567
+2023-10-15 09:24:16 [INFO] Vessel Name: M/Y AZURE DREAMS
+2023-10-15 09:24:16 [INFO] Registered Owner: Azure Holdings Ltd (Malta)
+2023-10-15 09:24:16 [INFO] Beneficial Owner: DiMarco Luxury Charters LLC (USA)
+2023-10-15 09:24:16 [INFO] Tonnage: 498 GT
+
+2023-10-15 09:25:32 [ACTION] Renewing annual registration
+2023-10-15 09:25:33 [INFO] Previous expiry: 2023-11-30
+2023-10-15 09:25:33 [INFO] New expiry: 2024-11-30
+2023-10-15 09:25:34 [INFO] Registration fee: €8,500
+2023-10-15 09:25:45 [PAYMENT] Processing payment via: Bank of Valletta
+2023-10-15 09:25:52 [PAYMENT] Transaction ID: BOV-2023-445789
+2023-10-15 09:25:53 [SUCCESS] Payment confirmed
+
+2023-10-15 09:26:10 [ACTION] Updating crew list
+2023-10-15 09:26:11 [INFO] Removing: Captain Roberto Gonzalez (ESP-4521)
+2023-10-15 09:26:12 [INFO] Adding: Captain James Morrison (UK-7892)
+2023-10-15 09:26:13 [INFO] Current crew count: 12
+2023-10-15 09:26:14 [VALIDATION] All crew certificates valid
+
+2023-10-15 09:27:01 [ACTION] Downloading updated documents
+2023-10-15 09:27:02 [DOWNLOAD] Certificate of Registry (PDF, 2.3MB)
+2023-10-15 09:27:05 [DOWNLOAD] Crew List Certificate (PDF, 856KB)
+2023-10-15 09:27:07 [DOWNLOAD] Radio License (PDF, 445KB)
+
+2023-10-15 09:28:45 [ACTION] Accessing vessel record: MLT-2021-8923
+2023-10-15 09:28:46 [INFO] Vessel Name: M/Y CARIBBEAN PEARL
+2023-10-15 09:28:46 [INFO] Registered Owner: Pearl Maritime Ltd (Malta)
+2023-10-15 09:28:46 [INFO] Tonnage: 892 GT
+
+2023-10-15 09:29:15 [ACTION] Submitting safety certificate
+2023-10-15 09:29:16 [UPLOAD] MCA Large Yacht Code Certificate
+2023-10-15 09:29:18 [INFO] Certificate valid until: 2025-03-15
+2023-10-15 09:29:19 [SUCCESS] Document uploaded and verified
+
+2023-10-15 09:30:22 [INFO] Session summary:
+2023-10-15 09:30:22 [INFO] - 1 registration renewed
+2023-10-15 09:30:22 [INFO] - 1 crew list updated
+2023-10-15 09:30:22 [INFO] - 1 safety certificate uploaded
+2023-10-15 09:30:22 [INFO] - Total fees paid: €8,500
+
+2023-10-15 09:30:45 [INFO] User logout: francesco.dimarco@dimarcoyachts.com
+2023-10-15 09:30:45 [INFO] Session duration: 7 minutes 4 seconds
