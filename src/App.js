@@ -258,18 +258,22 @@ function App() {
                 {client.hasV7Data && <span className="v7-indicator" title="Has V7 data">V7</span>}
               </h3>
               <div className="client-details">
-                <p><strong>DOB:</strong> {client.dob}</p>
-                <p><strong>Address:</strong> {client.address}</p>
-                <p><strong>Phone:</strong> {client.phone}</p>
-                <p><strong>SSN:</strong> {client.ssn}</p>
+                {client.dob && client.dob !== 'N/A' && <p><strong>DOB:</strong> {client.dob}</p>}
+                {client.address && client.address !== 'N/A' && <p><strong>Address:</strong> {client.address}</p>}
+                {client.phone && client.phone !== 'N/A' && <p><strong>Phone:</strong> {client.phone}</p>}
+                {client.ssn && client.ssn !== 'N/A' && <p><strong>SSN:</strong> {client.ssn}</p>}
               </div>
 
               {client.v7Data && (
                 <div className="v7-fields">
                   <h4>V7 Extracted Data:</h4>
-                  {Object.entries(client.v7Data).map(([field, value]) => (
-                    <p key={field}><strong>{field}:</strong> {value}</p>
-                  ))}
+                  {Object.entries(client.v7Data).map(([field, value]) => {
+                    // Use originalFilename for file field
+                    if (field === 'file' && client.v7Files && client.v7Files[0]) {
+                      value = client.v7Files[0].originalFilename || value;
+                    }
+                    return <p key={field}><strong>{field}:</strong> {value}</p>;
+                  })}
                 </div>
               )}
 

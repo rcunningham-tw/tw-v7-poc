@@ -83,10 +83,10 @@ export const mergeClientData = (localData, v7Data) => {
         // Add new client from V7
         const newClient = {
           name: v7Client.name,
-          address: v7Client.v7Data.address || 'Address from V7',
-          dob: v7Client.v7Data['date-of-birth'] || v7Client.v7Data.dob || 'N/A',
-          phone: v7Client.v7Data.phone || 'N/A',
-          ssn: v7Client.v7Data.ssn || 'N/A',
+          address: v7Client.v7Data.address || null,
+          dob: v7Client.v7Data['date-of-birth'] || v7Client.v7Data.dob || null,
+          phone: v7Client.v7Data.phone || null,
+          ssn: v7Client.v7Data.ssn || null,
           filenames: [],
           v7Files: v7Client.documents.map(doc => ({
             type: 'v7',

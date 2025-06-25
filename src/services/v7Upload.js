@@ -10,125 +10,105 @@ class V7UploadService {
     this.uploadProgress = {};
   }
 
-  // Create a new project/collection for uploads
-  async createUploadProject(name, description) {
+  // Get existing projects
+  async getProjects() {
     const url = `${BASE_URL}/workspaces/${WORKSPACE_ID}/projects`;
-    const response = await fetch(url, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        name,
-        description,
-        type: 'collection' // V7 uses collections for document processing
-      })
-    });
+    const response = await fetch(url);
 
     if (!response.ok) {
-      throw new Error(`Failed to create project: ${response.statusText}`);
+      throw new Error(`Failed to get projects: ${response.statusText}`);
     }
 
     const data = await response.json();
-    return data.id || data.project_id;
+    return data.data || data.projects || [];
+  }
+
+  // Get the first project or a specific project by name
+  async getProjectId(projectName = null) {
+    const projects = await this.getProjects();
+    console.log('Available projects:', projects.map(p => ({ id: p.id, name: p.name })));
+    
+    if (projectName) {
+      const project = projects.find(p => p.name === projectName);
+      return project ? project.id : null;
+    }
+    
+    // Return the first project if no name specified
+    if (projects.length > 0) {
+      console.log('Using project:', projects[0].name, 'with ID:', projects[0].id);
+      return projects[0].id;
+    }
+    
+    return null;
   }
 
   // Create an entity (document holder) in the project
-  async createEntity(projectId, metadata = {}) {
+  async createEntity(projectId, attorneyName = null, additionalFields = {}) {
     const url = `${BASE_URL}/workspaces/${WORKSPACE_ID}/projects/${projectId}/entities`;
+    
+    // Build fields object with attorney name and any additional fields
+    const payload = {};
+    const fields = {};
+    
+    if (attorneyName) {
+      fields['attorney-name'] = attorneyName;  // Using the slug format
+    }
+    
+    // Add any additional fields passed in (DOB, Address, Phone, SSN, etc.)
+    Object.assign(fields, additionalFields);
+    
+    if (Object.keys(fields).length > 0) {
+      payload.fields = fields;
+    }
+    
     const response = await fetch(url, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
       },
-      body: JSON.stringify({
-        metadata
-      })
+      body: JSON.stringify(payload)
     });
 
     if (!response.ok) {
-      throw new Error(`Failed to create entity: ${response.statusText}`);
+      const errorData = await response.json().catch(() => ({}));
+      console.error('Entity creation failed:', errorData);
+      throw new Error(`Failed to create entity: ${response.statusText} - ${errorData.message || ''}`);
     }
 
     const data = await response.json();
-    return data.id || data.entity_id;
+    // V7 returns the entity data directly with an 'id' field
+    return data.id;
   }
 
   // Get or create the file property for the project
   async getFileProperty(projectId) {
-    // First, try to get existing properties
     const url = `${BASE_URL}/workspaces/${WORKSPACE_ID}/projects/${projectId}/properties`;
     const response = await fetch(url);
     
     if (response.ok) {
       const data = await response.json();
       const properties = data.data || data.properties || [];
-      const fileProperty = properties.find(p => p.name === 'file' || p.type === 'file');
+      
+      console.log('All properties:', properties);
+      
+      // Look for file property - V7 uses lowercase in the actual API
+      const fileProperty = properties.find(p => 
+        p.name === 'file' || // lowercase as shown in the fetch response
+        p.name === 'File' || // uppercase from CSV export
+        p.name === 'Document' || 
+        p.type === 'file'
+      );
       
       if (fileProperty) {
+        console.log('Found file property:', fileProperty.id);
         return fileProperty.id;
       }
     }
 
-    // If no file property exists, create one
-    const createResponse = await fetch(url, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        name: 'file',
-        type: 'file',
-        description: 'Document file'
-      })
-    });
-
-    if (!createResponse.ok) {
-      throw new Error(`Failed to create file property: ${createResponse.statusText}`);
-    }
-
-    const newProperty = await createResponse.json();
-    return newProperty.id || newProperty.property_id;
+    console.log('No file property found');
+    throw new Error('No file property found in project. Please ensure the V7 project has a file property configured.');
   }
 
-  // Get or create the attorney name property
-  async getAttorneyProperty(projectId) {
-    const url = `${BASE_URL}/workspaces/${WORKSPACE_ID}/projects/${projectId}/properties`;
-    const response = await fetch(url);
-    
-    if (response.ok) {
-      const data = await response.json();
-      const properties = data.data || data.properties || [];
-      const attorneyProperty = properties.find(p => p.name === 'attorney-name');
-      
-      if (attorneyProperty) {
-        return attorneyProperty.id;
-      }
-    }
-
-    // Create attorney-name property
-    const createResponse = await fetch(url, {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        name: 'attorney-name',
-        type: 'text',
-        description: 'Attorney name',
-        config: {
-          user_input: true // Mark as user input field
-        }
-      })
-    });
-
-    if (!createResponse.ok) {
-      throw new Error(`Failed to create attorney property: ${createResponse.statusText}`);
-    }
-
-    const newProperty = await createResponse.json();
-    return newProperty.id || newProperty.property_id;
-  }
 
   // Start file upload process
   async startFileUpload(projectId, entityId, propertyId, filename) {
@@ -181,6 +161,18 @@ class V7UploadService {
 
   // Confirm file upload completion
   async confirmFileUpload(confirmUrl) {
+    // Extract the path from the full URL to route through proxy
+    let apiPath = confirmUrl;
+    
+    // If it's a full URL, extract just the API path
+    if (confirmUrl.includes('go.v7labs.com/api/')) {
+      apiPath = confirmUrl.split('go.v7labs.com/api/')[1];
+      // Route through our proxy
+      confirmUrl = `${BASE_URL}/${apiPath}`;
+    }
+    
+    console.log('Confirming upload via proxy:', confirmUrl);
+    
     const response = await fetch(confirmUrl, {
       method: 'POST',
       headers: {
@@ -199,53 +191,30 @@ class V7UploadService {
     return await response.json();
   }
 
-  // Set attorney name for an entity
-  async setAttorneyName(projectId, entityId, propertyId, attorneyName) {
-    const url = `${BASE_URL}/workspaces/${WORKSPACE_ID}/projects/${projectId}/entities/${entityId}/properties/${propertyId}`;
-    
-    const response = await fetch(url, {
-      method: 'PUT',
-      headers: {
-        'Content-Type': 'application/json'
-      },
-      body: JSON.stringify({
-        manual_value: {
-          value: attorneyName
-        }
-      })
-    });
-
-    if (!response.ok) {
-      throw new Error(`Failed to set attorney name: ${response.statusText}`);
-    }
-
-    return await response.json();
-  }
 
   // Upload a single file with attorney information
-  async uploadFile(projectId, file, attorneyName, onProgress) {
+  async uploadFile(projectId, file, attorneyName, onProgress, additionalFields = {}) {
     try {
-      // Create entity for this document
-      const entityId = await this.createEntity(projectId, {
-        attorneyName,
-        originalFilename: file.name
-      });
+      console.log(`Starting upload for ${file.name} (attorney: ${attorneyName})`);
+      
+      // Create entity for this document with attorney name and additional fields
+      const entityId = await this.createEntity(projectId, attorneyName, additionalFields);
+      console.log(`Created entity: ${entityId} with attorney: ${attorneyName}`);
 
       // Get property IDs
       const filePropertyId = await this.getFileProperty(projectId);
-      const attorneyPropertyId = await this.getAttorneyProperty(projectId);
-
-      // Set attorney name
-      await this.setAttorneyName(projectId, entityId, attorneyPropertyId, attorneyName);
 
       // Start file upload
       const uploadUrls = await this.startFileUpload(projectId, entityId, filePropertyId, file.name);
+      console.log('Upload URLs received:', uploadUrls);
       
-      // Upload to S3
+      // Upload to S3 (this goes directly to S3, not through proxy)
       await this.uploadToS3(uploadUrls.file_upload_url, file, onProgress);
+      console.log('File uploaded to S3 successfully');
       
-      // Confirm upload
+      // Confirm upload (this needs to go through proxy)
       await this.confirmFileUpload(uploadUrls.confirm_upload_url);
+      console.log('Upload confirmed successfully');
 
       return {
         success: true,
@@ -264,7 +233,7 @@ class V7UploadService {
   }
 
   // Batch upload multiple files
-  async uploadBatch(projectId, files, attorneyName, onOverallProgress) {
+  async uploadBatch(projectId, files, attorneyName, onOverallProgress, additionalFields = {}) {
     const results = [];
     let completed = 0;
 
@@ -278,7 +247,8 @@ class V7UploadService {
             const overallProgress = ((completed + fileProgress / 100) / files.length) * 100;
             onOverallProgress(overallProgress);
           }
-        }
+        },
+        additionalFields
       );
 
       results.push(result);

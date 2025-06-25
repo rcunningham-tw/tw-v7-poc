@@ -484,6 +484,10 @@
       }
     ]
   },
+  "Template": {
+    "clients": [],
+    "other_individuals": []
+  },
   "Blackwell": {
     "clients": [
       {

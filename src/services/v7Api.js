@@ -107,6 +107,9 @@ class V7ApiService {
       let clientName = null;
       let docType = null;
       let clientAddress = null;
+      let clientDOB = null;
+      let clientPhone = null;
+      let clientSSN = null;
       let originalFilename = null;
       let fileUrl = null;
 
@@ -132,8 +135,14 @@ class V7ApiService {
             clientName = value;
           } else if (lowerFieldName.includes('type') || lowerFieldName.includes('document')) {
             docType = value;
-          } else if (lowerFieldName.includes('address')) {
+          } else if (lowerFieldName === 'address' || (lowerFieldName.includes('address') && !lowerFieldName.includes('email'))) {
             clientAddress = value;
+          } else if (lowerFieldName === 'dob' || lowerFieldName.includes('birth')) {
+            clientDOB = value;
+          } else if (lowerFieldName === 'phone' || lowerFieldName.includes('phone')) {
+            clientPhone = value;
+          } else if (lowerFieldName === 'ssn' || lowerFieldName.includes('social')) {
+            clientSSN = value;
           }
         }
       });
@@ -148,6 +157,9 @@ class V7ApiService {
           client: clientName,
           type: docType,
           address: clientAddress,
+          dob: clientDOB,
+          phone: clientPhone,
+          ssn: clientSSN,
           created: entity.created_at,
           fields: fields,
           originalFilename: originalFilename,
@@ -165,6 +177,9 @@ class V7ApiService {
           attorney: attorneyName,
           type: docType,
           address: clientAddress,
+          dob: clientDOB,
+          phone: clientPhone,
+          ssn: clientSSN,
           created: entity.created_at,
           fields: fields,
           originalFilename: originalFilename,
@@ -198,18 +213,20 @@ class V7ApiService {
       const projects = await this.getProjects();
       console.log('Projects response:', projects);
       
+      // Filter for the specific project we're working with
+      const targetProjectId = '0197a2b7-971d-7e9b-87ba-59bd6e2aed3f';
+      const filteredProjects = projects.filter(p => p.id === targetProjectId);
+      const projectsToProcess = filteredProjects.length > 0 ? filteredProjects : projects;
+      
       // Collect all entities from all projects
       const allEntities = [];
       const projectInfo = [];
 
-      for (const project of projects) {
-        console.log(`Processing project: ${project.name} (${project.id})`);
+      for (const project of projectsToProcess) {
         
         const properties = await this.getProjectProperties(project.id);
-        console.log(`Properties for ${project.name}:`, properties);
         
         const entities = await this.getAllEntities(project.id);
-        console.log(`Entities for ${project.name}: ${entities.length} found`);
         
         allEntities.push(...entities);
         projectInfo.push({
@@ -231,14 +248,6 @@ class V7ApiService {
       };
 
       // Log all V7 data
-      console.log('=== V7 DATA LOADED ===');
-      console.log('Projects:', projectInfo);
-      console.log('Total Entities:', allEntities.length);
-      console.log('Attorney Groups:', processed.attorneyGroups);
-      console.log('Client Groups:', processed.clientGroups);
-      console.log('Document Types:', processed.documentTypes);
-      console.log('Raw Entities:', allEntities);
-      console.log('===================');
 
       return result;
     } catch (error) {

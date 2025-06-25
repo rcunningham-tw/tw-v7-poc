@@ -11,7 +11,7 @@ function V7Uploader({ onUploadComplete }) {
   const [projectId, setProjectId] = useState(null);
   const fileInputRef = useRef(null);
 
-  const attorneys = ['Morrison', 'Yamamoto', 'Blackwell'];
+  const attorneys = ['Morrison', 'Yamamoto', 'Blackwell', 'Fitzgerald', 'Template'];
 
   const handleFileSelect = (event) => {
     const files = Array.from(event.target.files);
@@ -28,15 +28,13 @@ function V7Uploader({ onUploadComplete }) {
     setUploadProgress(0);
 
     try {
-      // Create a new project for this upload batch
+      // Use the specific project ID
       let currentProjectId = projectId;
       if (!currentProjectId) {
-        const projectName = `Upload_${selectedAttorney}_${new Date().toISOString().split('T')[0]}`;
-        currentProjectId = await v7UploadService.createUploadProject(
-          projectName,
-          `Document upload for attorney ${selectedAttorney}`
-        );
+        // Use the extraction project ID directly
+        currentProjectId = '0197a2b7-971d-7e9b-87ba-59bd6e2aed3f';
         setProjectId(currentProjectId);
+        console.log('Using V7 project:', currentProjectId);
       }
 
       // Upload all files
