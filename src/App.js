@@ -4,11 +4,13 @@ import localClientData from './data/clientData.json';
 import { useV7Data } from './hooks/useV7Data';
 import { mergeClientData, createV7Summary, getDocumentTypeDisplay } from './utils/dataMerger';
 import ComparisonView from './components/ComparisonView';
+import V7Uploader from './components/V7Uploader';
 
 function App() {
   const [activeAttorney, setActiveAttorney] = useState('Morrison');
   const [shouldUseV7Data, setShouldUseV7Data] = useState(true);
   const [showComparisonView, setShowComparisonView] = useState(false);
+  const [showUploader, setShowUploader] = useState(false);
   const [clientData, setClientData] = useState(localClientData);
   
   // Fetch V7 data
@@ -208,15 +210,28 @@ function App() {
         )}
         <button onClick={refetch} disabled={v7Loading}>Refresh V7 Data</button>
         {v7Data && (
-          <button 
-            onClick={() => setShowComparisonView(!showComparisonView)}
-          >
-            {showComparisonView ? 'Show Normal View' : 'Show Comparison View'}
-          </button>
+          <>
+            <button 
+              onClick={() => setShowComparisonView(!showComparisonView)}
+            >
+              {showComparisonView ? 'Show Normal View' : 'Show Comparison View'}
+            </button>
+            <button
+              onClick={() => setShowUploader(!showUploader)}
+            >
+              {showUploader ? 'Hide Uploader' : 'Upload Files to V7'}
+            </button>
+          </>
         )}
       </div>
       
-      {showComparisonView && v7Data ? (
+      {showUploader ? (
+        <V7Uploader onUploadComplete={(projectId, results) => {
+          console.log('Upload completed:', projectId, results);
+          // Optionally refresh V7 data after upload
+          setTimeout(() => refetch(), 5000); // Wait 5 seconds for processing
+        }} />
+      ) : showComparisonView && v7Data ? (
         <ComparisonView localData={localClientData} v7Data={v7Data} />
       ) : (
         <>

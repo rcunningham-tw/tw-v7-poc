@@ -30,6 +30,36 @@ if (!V7_API_KEY || !V7_WORKSPACE_ID) {
   console.log('V7 API key present:', !!V7_API_KEY);
 }
 
+// Special handling for file upload endpoints that return presigned URLs
+app.post('/api/v7/workspaces/:workspaceId/projects/:projectId/entities/:entityId/properties/:propertyId/start_file_upload', async (req, res) => {
+  try {
+    const { workspaceId, projectId, entityId, propertyId } = req.params;
+    const v7Url = `${V7_BASE_URL}/workspaces/${workspaceId}/projects/${projectId}/entities/${entityId}/properties/${propertyId}/start_file_upload`;
+    
+    console.log(`[${new Date().toISOString()}] Starting file upload: ${v7Url}`);
+    
+    const response = await fetch(v7Url, {
+      method: 'POST',
+      headers: {
+        'X-API-KEY': V7_API_KEY,
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(req.body)
+    });
+    
+    const data = await response.json();
+    console.log('Upload URLs generated:', data);
+    
+    res.status(response.status).json(data);
+  } catch (error) {
+    console.error('File upload start error:', error);
+    res.status(500).json({ 
+      error: 'Failed to start file upload', 
+      message: error.message 
+    });
+  }
+});
+
 // Proxy endpoint for V7 API
 app.all('/api/v7/*', async (req, res) => {
   try {

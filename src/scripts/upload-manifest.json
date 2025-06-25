@@ -1,0 +1,249 @@
+{
+  "timestamp": "2025-06-25T15:52:17.766Z",
+  "attorneys": {
+    "Morrison": {
+      "files": [
+        {
+          "attorney": "Morrison",
+          "filename": "Family_Contact_List.csv.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Morrison/Family_Contact_List.csv.txt",
+          "size": 1364
+        },
+        {
+          "attorney": "Morrison",
+          "filename": "Insurance_Claim_2021.txt.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Morrison/Insurance_Claim_2021.txt.txt",
+          "size": 805
+        },
+        {
+          "attorney": "Morrison",
+          "filename": "LastWillTestament_2023_draft.txt.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Morrison/LastWillTestament_2023_draft.txt.txt",
+          "size": 2060
+        },
+        {
+          "attorney": "Morrison",
+          "filename": "Property_Transfer_Deed.docx.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Morrison/Property_Transfer_Deed.docx.txt",
+          "size": 2085
+        },
+        {
+          "attorney": "Morrison",
+          "filename": "TRUST_AGREEMENT_2022.txt.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Morrison/TRUST_AGREEMENT_2022.txt.txt",
+          "size": 2367
+        },
+        {
+          "attorney": "Morrison",
+          "filename": "auto_transfer_record.csv.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Morrison/auto_transfer_record.csv.txt",
+          "size": 858
+        },
+        {
+          "attorney": "Morrison",
+          "filename": "beneficiary_info_mitchell.txt.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Morrison/beneficiary_info_mitchell.txt.txt",
+          "size": 948
+        },
+        {
+          "attorney": "Morrison",
+          "filename": "estate_planning_letter_jc.docx.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Morrison/estate_planning_letter_jc.docx.txt",
+          "size": 1569
+        },
+        {
+          "attorney": "Morrison",
+          "filename": "marina_lease_agreement.docx.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Morrison/marina_lease_agreement.docx.txt",
+          "size": 991
+        },
+        {
+          "attorney": "Morrison",
+          "filename": "medical_directive_draft.txt.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Morrison/medical_directive_draft.txt.txt",
+          "size": 1183
+        },
+        {
+          "attorney": "Morrison",
+          "filename": "misc_correspondence_2023.txt.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Morrison/misc_correspondence_2023.txt.txt",
+          "size": 1137
+        },
+        {
+          "attorney": "Morrison",
+          "filename": "tax_summary_2022.txt.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Morrison/tax_summary_2022.txt.txt",
+          "size": 1159
+        },
+        {
+          "attorney": "Morrison",
+          "filename": "vehicle_sale_agreement_2023.txt.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Morrison/vehicle_sale_agreement_2023.txt.txt",
+          "size": 975
+        },
+        {
+          "attorney": "Morrison",
+          "filename": "will_revision_notes.txt.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Morrison/will_revision_notes.txt.txt",
+          "size": 713
+        }
+      ],
+      "count": 14,
+      "totalSize": 18214
+    },
+    "Yamamoto": {
+      "files": [
+        {
+          "attorney": "Yamamoto",
+          "filename": "ENVIRONMENTAL_TRUST_DEED.md.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Yamamoto/ENVIRONMENTAL_TRUST_DEED.md.txt",
+          "size": 2281
+        },
+        {
+          "attorney": "Yamamoto",
+          "filename": "OLCC_license_transfer.txt.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Yamamoto/OLCC_license_transfer.txt.txt",
+          "size": 1738
+        },
+        {
+          "attorney": "Yamamoto",
+          "filename": "brewery_acquisition_loi.txt.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Yamamoto/brewery_acquisition_loi.txt.txt",
+          "size": 1854
+        },
+        {
+          "attorney": "Yamamoto",
+          "filename": "carbon_offset_portfolio.csv.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Yamamoto/carbon_offset_portfolio.csv.txt",
+          "size": 1401
+        },
+        {
+          "attorney": "Yamamoto",
+          "filename": "employee_handbook_acknowledgment.pdf.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Yamamoto/employee_handbook_acknowledgment.pdf.txt",
+          "size": 1923
+        },
+        {
+          "attorney": "Yamamoto",
+          "filename": "hop_farm_purchase_2021.txt.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Yamamoto/hop_farm_purchase_2021.txt.txt",
+          "size": 1552
+        },
+        {
+          "attorney": "Yamamoto",
+          "filename": "maritime_insurance_claim.docx.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Yamamoto/maritime_insurance_claim.docx.txt",
+          "size": 1516
+        },
+        {
+          "attorney": "Yamamoto",
+          "filename": "orcas_island_property.eml.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Yamamoto/orcas_island_property.eml.txt",
+          "size": 1766
+        },
+        {
+          "attorney": "Yamamoto",
+          "filename": "restricted_stock_agreement_MSFT.json.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Yamamoto/restricted_stock_agreement_MSFT.json.txt",
+          "size": 1162
+        },
+        {
+          "attorney": "Yamamoto",
+          "filename": "solar_investment_k1_2022.txt.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Yamamoto/solar_investment_k1_2022.txt.txt",
+          "size": 1385
+        },
+        {
+          "attorney": "Yamamoto",
+          "filename": "startup_equity_docs.xml.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Yamamoto/startup_equity_docs.xml.txt",
+          "size": 2153
+        },
+        {
+          "attorney": "Yamamoto",
+          "filename": "vessel_documentation_2023.yaml.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Yamamoto/vessel_documentation_2023.yaml.txt",
+          "size": 1913
+        }
+      ],
+      "count": 12,
+      "totalSize": 20644
+    },
+    "Blackwell": {
+      "files": [
+        {
+          "attorney": "Blackwell",
+          "filename": "MUSIC_ROYALTY_AUDIT_2023Q2.tsv.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Blackwell/MUSIC_ROYALTY_AUDIT_2023Q2.tsv.txt",
+          "size": 1395
+        },
+        {
+          "attorney": "Blackwell",
+          "filename": "NFL_pension_distribution.html.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Blackwell/NFL_pension_distribution.html.txt",
+          "size": 3758
+        },
+        {
+          "attorney": "Blackwell",
+          "filename": "annual_disclosure_2023.tex.md.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Blackwell/annual_disclosure_2023.tex.md.txt",
+          "size": 2682
+        },
+        {
+          "attorney": "Blackwell",
+          "filename": "caribbean_development_permits.json5.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Blackwell/caribbean_development_permits.json5.txt",
+          "size": 4373
+        },
+        {
+          "attorney": "Blackwell",
+          "filename": "entertainment_venue_licenses.ini.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Blackwell/entertainment_venue_licenses.ini.txt",
+          "size": 1933
+        },
+        {
+          "attorney": "Blackwell",
+          "filename": "offshore_company_formation.tex.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Blackwell/offshore_company_formation.tex.txt",
+          "size": 2938
+        },
+        {
+          "attorney": "Blackwell",
+          "filename": "production_company_distribution.toml.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Blackwell/production_company_distribution.toml.txt",
+          "size": 2621
+        },
+        {
+          "attorney": "Blackwell",
+          "filename": "recording_studio_lease.asc.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Blackwell/recording_studio_lease.asc.txt",
+          "size": 2108
+        },
+        {
+          "attorney": "Blackwell",
+          "filename": "stadium_naming_rights.sql.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Blackwell/stadium_naming_rights.sql.txt",
+          "size": 2853
+        },
+        {
+          "attorney": "Blackwell",
+          "filename": "vessel_registration_malta.log.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Blackwell/vessel_registration_malta.log.txt",
+          "size": 2390
+        },
+        {
+          "attorney": "Blackwell",
+          "filename": "yacht_charter_agreement.rtf.txt",
+          "path": "/Users/robert/tw/tw-v7-poc/src/data/Blackwell/yacht_charter_agreement.rtf.txt",
+          "size": 2400
+        }
+      ],
+      "count": 11,
+      "totalSize": 29451
+    }
+  },
+  "summary": {
+    "totalFiles": 37,
+    "totalSize": 68309
+  }
+}
